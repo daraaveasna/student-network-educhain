@@ -1,4 +1,4 @@
-![MaterHead](https://github.com/daraaveasna/daraaveasna/blob/main/githubBanner.gif)
+![MaterHead](https://github.com/daraaveasna/student-network-educhain/blob/main/asset/img/educhainBanner.gif)
 
 <div align="center">
 
