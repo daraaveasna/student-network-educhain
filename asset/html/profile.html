@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../icons/logoo.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="flex justify-center w-full h-full screen bg-[#F6F6F6] relative">
+      <div class="center w-[1280px] h-full relative">
+        <div class="justify-center w-full bg-[#F6F6F6] flex-col relative">
+          <nav class="sticky top-0 z-50">
+            <div
+              class="nav-bar w-[1280px] h-[70px] bg-white flex items-center border sticky"
+            >
+              <a href="../html/homePage.html"
+                ><div class="flex flex-row ml-[32px] logo cursor-pointer">
+                  <img class="mr-1" src="../icons/logoo.svg" alt="logo" />
+                  <img src="../icons/logoLetter.svg" alt="logo" /></div
+              ></a>
+              
+
+              <button id="dropdownUsersButton" data-dropdown-toggle="dropdownUsers" data-dropdown-placement="bottom" class="text-gray-500 border ml-[45px] border-black SearchBtn w-[650px] h-9 bg-neutral-100 rounded-2xl border-opacity-10 flex text-xl font-normal leading-relaxed tracking-tight items-centerfocus:ring-4 focus:outline-none focus:ring-blue-300  text-sm px-4 text-center  dark:focus:ring-blue-800" type="button">Search 
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownUsers" class="z-50 hidden bg-white rounded-lg shadow w-[650px] dark:bg-[#F6F6F6]">
+              <ul class="h-48 py-2 overflow-y-auto text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUsersButton">
+                <li>
+                  <a href="./profile.html" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../img/profile.png" alt="Jese image">
+                    Dara Veasna
+                  </a>
+                </li>
+                <li>
+                  <a href="./profile-elon.html" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/profile/elon.png" alt="Jese image">
+                    Elon Mask
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="object-cover w-6 h-6 mr-2 rounded-full" src="../img/me.png" alt="Jese image">
+                    Niccolo'
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../img/itc-pf.png" alt="Jese image">
+                    Institute of Technology of Cambodia
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/company/aws.png" alt="Jese image">
+                    Michael Gough
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/company/github.png" alt="Jese image">
+                    Github
+                  </a>
+                </li>
+                      <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/company/stackoverflow.png" alt="Jese image">
+                    Stackoverflow
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/company/linkedin.png" alt="Jese image">
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+              <a href="./connection-user.html" class="flex items-center p-3 text-sm font-medium text-white border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-blue-400 dark:hover:bg-blue-500 hover:underline">
+                  <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                    <path d="M6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Zm11-3h-2V5a1 1 0 0 0-2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 0 0 2 0V9h2a1 1 0 1 0 0-2Z"/>
+                  </svg>
+                  Add new user
+              </a>
+              </div>
+              
+
+
+              
+              <div
+                class="btn ml-[75px] flex flex-row w-[208px] justify-between"
+              >
+                <div
+                  class="flex items-center justify-center w-10 h-10 bg-white border border-black rounded-full cursor-pointer Rectangle80 border-opacity-10"
+                >
+                  <div class="w-5 h-5 Frame">
+                    <img src="../icons/Frame.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center w-10 h-10 bg-white border border-black rounded-full cursor-pointer Rectangle80 border-opacity-10"
+                >
+                  <div class="relative w-5 h-5 Frame">
+                    <div
+                      class="Ellipse36 w-4 h-4 bg-blue-400 rounded-full absolute bottom-[15px] left-[19px]"
+                    >
+                      <div
+                        class="flex items-center justify-center text-[10px] font-semibold text-center text-white w-4 h-4 rounded-full"
+                      >
+                        1<br />
+                      </div>
+                    </div>
+                    <img src="../icons/chat.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center w-10 h-10 bg-white border border-black rounded-full cursor-pointer Rectangle80 border-opacity-10"
+                >
+                  <div class="relative w-5 h-5 Frame">
+                    <div
+                      class="Ellipse36 w-4 h-4 bg-blue-400 rounded-full absolute bottom-[15px] left-[19px]"
+                    >
+                      <div
+                        class="flex items-center justify-center text-[10px] font-semibold text-center text-white w-4 h-4 rounded-full"
+                      >
+                        5<br />
+                      </div>
+                    </div>
+                    <img src="../icons/notification.svg" alt="" />
+                  </div>
+                </div>
+                
+                
+                <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-end" class="w-10 h-10 p-1 rounded-full cursor-pointer ring-2 ring-gray-300 hover:ring-blue-500" src="../img/profile.png" alt="User dropdown">
+
+                  <!-- Dropdown menu -->
+                  <div id="userDropdown" class="z-10 hidden bg-[#FFFFFF] divide-y divide-gray-100 rounded-lg shadow w-[250px] dark:divide-gray-600">
+                      <div class="flex flex-row items-center justify-center px-4 py-3 text-sm text-gray-900 dark:text-whiten">
+                        <img class="w-10 h-10 rounded-full Rectangle81 mr-[20px]" src="../img/profile.png" />
+                        <div class="text-2xl font-bold text-gray-700 DaraVeasna w-36">Dara Veasna</div>
+                      </div>
+                      <button onclick="window.location.href='./profile.html'" class="mx-[20px] relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-blue-400 to-purple-500 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-blue-200">
+                        <span class="relative py-1 text-blue-500 transition-all duration-75 ease-in bg-white rounded-full px-[65px] group-hover:bg-opacity-0 hover:text-white ">
+                            View Profile
+                        </span>
+                      </button>
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-50 dark:hover:text-white">
+                            <div class="flex items-center justify-between frame">
+                              <div class="flex flex-row items-center">
+                                <div class="relative mr-3 Icon w-9 h-9">
+                                  <div class="flex items-center justify-center rounded-full w-9 h-9 bg-stone-200">
+                                    <img src="../icons/btn/editpro.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="text-sm font-medium text-gray-500 References">Edit Profile</div>
+                              </div>
+                              <div class="for"><img src="../icons/btn/right.svg" alt=""></div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-50 dark:hover:text-white">
+                            <div class="flex items-center justify-between frame">
+                              <div class="flex flex-row items-center">
+                                <div class="relative mr-3 Icon w-9 h-9">
+                                  <div class="flex items-center justify-center rounded-full w-9 h-9 bg-stone-200">
+                                    <img src="../icons/btn/setting.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="text-sm font-medium text-gray-500 References">Setting & Privacy</div>
+                              </div>
+                              <div class="for"><img src="../icons/btn/right.svg" alt=""></div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-50 dark:hover:text-white">
+                            <div class="flex items-center justify-between frame">
+                              <div class="flex flex-row items-center">
+                                <div class="relative mr-3 Icon w-9 h-9">
+                                  <div class="flex items-center justify-center rounded-full w-9 h-9 bg-stone-200">
+                                    <img src="../icons/btn/help.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="text-sm font-medium text-gray-500 References">Help & Support</div>
+                              </div>
+                              <div class="for"><img src="../icons/btn/right.svg" alt=""></div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="py-1">
+                        <a href="./landingPage.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-50 dark:hover:text-white">
+                          <div class="flex items-center justify-between frame">
+                            <div class="flex flex-row items-center">
+                              <div class="relative mr-3 Icon w-9 h-9">
+                                <div class="flex items-center justify-center rounded-full w-9 h-9 bg-stone-200">
+                                  <img src="../icons/btn/logout.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="text-sm font-medium text-gray-500 References">Logout</div>
+                            </div>
+                            <div class="for"><img src="../icons/btn/right.svg" alt=""></div>
+                          </div>
+                        </a>
+                      </div>
+                  </div>
+            
+              </div>
+            </div>
+          </nav>
+          <div
+            class="container flex justify-evenly w-[1280px] h-full bg-[#F6F6F6]"
+          >
+          <div class="profile-scroll">
+            <div class="profile w-[937px] h-full static">
+              <div class="w-full bg-white shadow Rectangle57 h-72 rounded-2xl mt-[13px] relative">
+                <div class="profile-user h-[154px]">
+                <img class="w-full rounded-tl-2xl rounded-tr-2xl" src="../img/cover.png" />
+                <img class="relative  h-24 rounded-full top-[-72px] pl-[50px]" src="../img/profile.png" />
+                <div class="relative flex flex-row items-center info top-[-90px] justify-end mr-4">
+                  <img class="pr-1 Itc2" src="../img/itc-pf.png" />
+                  <div class="text-sm font-medium text-gray-500 InstituteOfTechnologyOfCambodia">Institute of Technology of Cambodia</div>
+                </div>
+              </div>
+                <div class="uer-info pl-[37px]">
+                  <div class="text-xl font-semibold text-black DaraVeasna text-opacity-80">Dara VEASNA</div>
+                  <div class="text-sm font-normal text-gray-500 StudentAtInstituteOfTechnologyOfCambodia">Student at Institute of Technology of Cambodia</div>
+                  <div class="flex flex-row info mt-[13px]">
+                    <div class="text-sm font-normal  mr-[10px] text-gray-500 SiemReapCambodia text-opacity-70">Siem Reap, Cambodia</div>
+                    <div class="text-sm font-semibold text-blue-400 cursor-pointer ContactInfo hover:text-gray-600 hover:underline">Contact info</div>
+                  </div>
+                  <div class="text-sm font-semibold text-blue-400 cursor-pointer Connections hover:text-gray-600 hover:underline">27  connections</div>
+                </div>
+              </div>
+              <div class="flex flex-col w-full h-[104px] mt-4 bg-white shadow about rounded-2xl px-[20px] justify-center">
+                <div class="text-base font-medium About text-sky-950">About</div>
+                <div class="w-full text-sm font-normal text-gray-500">Dara  is a computer engineering student and an environmental enthusiast. He is passionate about volunteerism since he was elected as a leader of Student Council at a high school in Siem Reap Province. He like drawing and sketching since he was young and he really enjoy using this talent to deliver impactful messages to the society.</div>
+              </div>
+              <div class="mt-4 experience">
+                <div class="w-full h-full bg-white shadow  rounded-2xl px-[19px] py-3">
+                  <div class="text-base font-bold Experience text-sky-800 cursor-none">Experience</div>
+                  <div class="flex flex-col">
+                    <div class="flex flex-row mt-3 cursor-pointer info-expert">
+                      <div class="company"><img class="w-9 h-9" src="../icons/company/aws.png" alt=""></div>
+                      <div class="flex flex-col expert-info ml-[9px]">
+                        <div class="text-sm font-medium text-blue-800 ProgramAssistantIntern">Program Assistant Intern </div>
+                        <div class="text-[14px] font-normal text-sky-950 text-opacity-90">Center for Substainable Water (CSW) - Part time</div>
+                        <div class="text-xs font-normal text-gray-500 ">Feb 2023 - May 2023 · 4 mos<br/>Phnom Penh, Cambodia · On-site</div>
+                        <div class="mt-2 text-xs font-medium text-sky-950">In CSW, I am able to contribute in accelerating WASH action (SDG6)</div>
+                      </div>
+                    </div>
+                    <hr class="mt-3">
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex flex-row mt-3 cursor-pointer info-expert">
+                      <div class="h-9 w-9 company "><img class="w-9 h-9" src="../icons/company/microsoft.png" alt=""></div>
+                      <div class="flex flex-col expert-info ml-[9px]">
+                        <div class="text-sm font-medium text-blue-800 ProgramAssistantIntern">Blockchain Consultant</div>
+                        <div class="text-[14px] font-normal text-sky-950 text-opacity-90">Center for Substainable Water (CSW) - Part time</div>
+                        <div class="text-xs font-normal text-gray-500 ">Feb 2023 - May 2023 · 4 mos<br/>Phnom Penh, Cambodia · On-site</div>
+                        <div class="mt-2 text-xs font-medium text-sky-950">In CSW, I am able to contribute in accelerating WASH action (SDG6)</div>
+                      </div>
+                    </div>
+                    <hr class="mt-3">
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex flex-row mt-3 cursor-pointer info-expert">
+                      <div class="h-9 w-9 company "><img class="w-9 h-9" src="../icons/company/github.png" alt=""></div>
+                      <div class="flex flex-col expert-info ml-[9px]">
+                        <div class="text-sm font-medium text-blue-800 ProgramAssistantIntern">Cyber Security consultant </div>
+                        <div class="text-[14px] font-normal text-sky-950 text-opacity-90">Center for Substainable Water (CSW) - Part time</div>
+                        <div class="text-xs font-normal text-gray-500 ">Feb 2023 - May 2023 · 4 mos<br/>Phnom Penh, Cambodia · On-site</div>
+                        <div class="mt-2 text-xs font-medium text-sky-950">In CSW, I am able to contribute in accelerating WASH action (SDG6)</div>
+                      </div>
+                    </div>
+                    <hr class="mt-3">
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex flex-row mt-3 cursor-pointer info-expert">
+                      <div class="h-9 w-9 company "><img class="w-9 h-9" src="../icons/company/linkedin.png" alt=""></div>
+                      <div class="flex flex-col expert-info ml-[9px]">
+                        <div class="text-sm font-medium text-blue-800 ProgramAssistantIntern">Program Assistant Intern </div>
+                        <div class="text-[14px] font-normal text-sky-950 text-opacity-90">Center for Substainable Water (CSW) - Part time</div>
+                        <div class="text-xs font-normal text-gray-500 ">Feb 2023 - May 2023 · 4 mos<br/>Phnom Penh, Cambodia · On-site</div>
+                        <div class="mt-2 text-xs font-medium text-sky-950">In CSW, I am able to contribute in accelerating WASH action (SDG6)</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="education">
+                  <div class="w-full mt-3 bg-white shadow education h-full pb-3 rounded-2xl px-[19px] pt-3 flex flex-col">
+                    <div class="text-base font-bold Education text-sky-800 cursor-none">Education</div>
+                    <div class="edu-info">
+                      <div class="flex flex-row edu">
+                        <a href="https://itc.edu.kh/" target="_blank">
+                          <div class="flex flex-row mt-3 cursor-pointer edu-expert">
+                            <div class="company"><img class="h-9 w-9" src="../icons/school/itc.svg" alt=""></div>
+                            <div class="flex flex-col edu-info ml-[9px]">
+                              <div class="text-sm font-medium text-blue-800">Institute of Technology of Cambodia (ITC)</div>
+                              <div class="text-xs font-medium ComputerScience text-sky-950 text-opacity-90">Computer Science</div>
+                              <div class="mt-1 text-xs font-normal text-gray-500 2024">2019 - 2024</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <hr class="mt-3">
+                    </div>
+                    <div class="flex flex-col">
+                      <a href="https://www.uhs.edu.kh/" target="_blank">
+                        <div class="flex flex-row mt-3 cursor-pointer info-expert">
+                          <div class="company"><img class="h-9 w-9 " src="../icons/school/uhs.svg" alt=""></div>
+                          <div class="flex flex-col expert-info ml-[9px]">
+                            <div class="text-sm font-medium text-blue-800">University of Health (UHS)</div>
+                              <div class="text-xs font-medium ComputerScience text-sky-950 text-opacity-90">Doctor of Surgery</div>
+                              <div class="mt-1 text-xs font-normal text-gray-500 2024">2019 - 2024</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="project mt-[13px]">
+                    <div class="w-full h-full pt-3 bg-white shadow Rectangle7203 rounded-2xl px-[19px] pb-3">
+                      <div class="text-base font-bold Education text-sky-800 cursor-none">Projects</div>
+                      <div class="flex flex-row justify-between pt-3 project-info">
+                        <div class="flex flex-col txt/">
+                          <div class="text-sm font-semibold NationalPayment text-sky-950">National Payment</div>
+                          <div class="text-xs font-medium text-gray-500 2024">2019 - 2024</div>
+                        </div>
+                        <button type="button" class="inline-flex items-center justify-center gap-2 px-4 text-sm font-semibold text-white transition-all bg-blue-500 border border-transparent rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
+                          Show Project
+                          <img src="../icons/link.svg" alt="">
+                        </button>
+                      </div>
+                      <div class="w-full mt-4 text-xs font-normal text-sky-950">I am a founder and project leader of Draw4Earth. This mini project aims to celebrate YSEALI 9th birthday and inspire young Cambodians to take part in raising environment awareness through artwork for building our sustainable future.</div>
+                      <hr class="mt-3">
+                      <div class="flex flex-row justify-between pt-3 project-info">
+                        <div class="flex flex-col txt/">
+                          <div class="text-sm font-semibold NationalPayment text-sky-950">Green Force</div>
+                          <div class="text-xs font-medium text-gray-500 2024">2019 - 2024</div>
+                        </div>
+                        <button type="button" class="inline-flex items-center justify-center gap-2 px-4 text-sm font-semibold text-white transition-all bg-blue-500 border border-transparent rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
+                          Show Project
+                          <img src="../icons/link.svg" alt="">
+                        </button>
+                      </div>
+                      <div class="w-full mt-4 text-xs font-normal text-sky-950">I am a founder and project leader of Draw4Earth. This mini project aims to celebrate YSEALI 9th birthday and inspire young Cambodians to take part in raising environment awareness through artwork for building our sustainable future.</div>
+                    </div>
+                  </div>
+                  <div class="mt-3 interested">
+                    <div class="w-full h-full bg-white shadow Rectangle7203 rounded-2xl  px-[19px] py-3">
+                      <div class="text-base font-bold Interests text-sky-800">Interests</div>
+                      
+                      <div class="px-4 border-b border-gray-200 dark:border-gray-700">
+                        <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
+                          <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 font-semibold" id="basic-tabs-item-1" data-hs-tab="#basic-tabs-1" aria-controls="basic-tabs-1" role="tab">
+                            Companies
+                          </button>
+                          <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 font-semibold" id="basic-tabs-item-2" data-hs-tab="#basic-tabs-2" aria-controls="basic-tabs-2" role="tab">
+                            School
+                          </button>
+                          <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 font-semibold" id="basic-tabs-item-3" data-hs-tab="#basic-tabs-3" aria-controls="basic-tabs-3" role="tab">
+                            Newsletter
+                          </button>
+                        </nav>
+                      </div>
+                      
+                      <div class="p-4 mt-3">
+                        <div id="basic-tabs-1" role="tabpanel" aria-labelledby="basic-tabs-item-1">
+                          <div class="flex flex-row companies">
+                            <img class="relative icon w-7" src="../icons/appleinter.png" />
+                            <div class="flex flex-col justify-start ml-2 info">
+                              <div class="pl-2 text-sm font-medium leading-snug text-black CompanyName text-opacity-80">Apple</div>
+                              <div class="pl-2 text-xs font-medium leading-snug text-gray-500 t MFollowers">9M Followers</div>
+                              <div class="btn">
+                                <button
+                              type="button"
+                              class="absolute bg-blue-500 hover:border-white text-white px-5 py-1 my-2 text-xs font-medium text-center  border border-[#5D6D79] rounded-full Follow"
+                              >
+                                Following
+                              </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="basic-tabs-2" class="hidden" role="tabpanel" aria-labelledby="basic-tabs-item-2">
+                          <div class="flex flex-row companies">
+                            <img class="relative icon w-9" src="../icons/school/itc.svg" />
+                            <div class="flex flex-col justify-start ml-2 info">
+                              <div class="pl-2 text-sm font-medium leading-snug text-black CompanyName text-opacity-80">Institute of Technology Of Cambodia</div>
+                              <div class="pl-2 text-xs font-medium leading-snug text-gray-500 t MFollowers">9M Followers</div>
+                              <div class="btn">
+                                <button
+                              type="button"
+                              class="absolute bg-blue-500 hover:border-white text-white px-5 py-1 my-2 text-xs font-medium text-center  border border-[#5D6D79] rounded-full Follow"
+                              >
+                                Following
+                              </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="basic-tabs-3" class="hidden" role="tabpanel" aria-labelledby="basic-tabs-item-3">
+                          <div class="flex flex-row companies">
+                            <img class="relative icon w-9" src="../icons/company/microsoft.png" />
+                            <div class="flex flex-col justify-start ml-2 info">
+                              <div class="pl-2 text-sm font-medium leading-snug text-black CompanyName text-opacity-80">Microsoft</div>
+                              <div class="pl-2 text-xs font-medium leading-snug text-gray-500 t MFollowers">9M Followers</div>
+                              <div class="btn">
+                                <button
+                              type="button"
+                              class="absolute bg-blue-500 hover:border-white text-white px-5 py-1 my-2 text-xs font-medium text-center  border border-[#5D6D79] rounded-full Follow"
+                              >
+                                Following
+                              </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="mt-6">
+                      <div class="flex flex-row items-center justify-center pt-2 cursor-pointer see-all">
+                        <div class="mr-2 text-sm font-medium leading-snug text-center text-gray-500 ShowAllPost">Show all post</div>
+                        <img src="../icons/arrow_forward-small.svg" alt="">
+                      </div>
+                    </div>
+                  </div> 
+
+                  <div class="mt-3 interested">
+                    <div class="w-full h-full bg-white shadow Rectangle7203 rounded-2xl  px-[19px] py-3">
+                      <div class="flex flex-row justify-between top">
+                        <div class="txt">
+                          <div class="text-base font-bold Interests text-sky-800">Activity</div>
+                          <div class="mt-2 text-xs font-semibold text-blue-400 Followers">9 followers</div>
+                        </div>
+                        <div class="flex items-center creat-post">
+                          <button type="button" class="inline-flex items-center justify-center gap-2 px-3 py-1 text-sm font-semibold text-blue-500 transition-all bg-transparent border border-blue-500 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-blue-400 hover:text-white hover:bg-blue-500">
+                            Create a post
+                          </button>
+                        </div>
+                      </div>
+                      <div class="px-4 border-b border-gray-200 dark:border-gray-700">
+                        <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
+                          <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 font-semibold" id="tabs-item-1" data-hs-tab="tabs-1" aria-controls="tabs-1" role="tab">
+                            Posts
+                          </button>
+                          <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 font-semibold" id="tabs-item-2" data-hs-tab="tabs-2" aria-controls="tabs-2" role="tab">
+                            Images
+                          </button>
+                          <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 font-semibold" id="tabs-item-3" data-hs-tab="tabs-3" aria-controls="tabs-3" role="tab">
+                            Status
+                          </button>
+                        </nav>
+                      </div>
+                      
+                      <div class="p-4 mt-3 cursor-pointer">
+                        <div id="tabs-1" role="tabpanel" aria-labelledby="tabs-item-1">
+                          <div class="flex flex-row post">
+                            <div class="flex flex-row post">
+                              <div class="contain">
+                                <div class="flex flex-row status">
+                                  <div class="ml-2 text-xs font-medium text-center text-gray-800 DaraVeasn hover:text-blue-500">Dara Veasna </div>
+                                  <div class="ml-4 text-xs font-medium text-center text-gray-500 Posted">posted this . 2h ago</div>
+                                </div>
+                                <div class="flex flex-row mt-2 img-state">
+                                  <img class="mr-3 object-cover20 object- Img rounded-2xl" src="../img/img.png"/>
+                                  <div class="text-xs font-semibold text-blue-400 Title">#SeaGames2023</div>
+                                </div>
+                              </div>
+                              <div class="ml-10 contain">
+                              <div class="flex flex-row status">
+                                <div class="ml-2 text-xs font-medium text-center text-gray-800 DaraVeasn hover:text-blue-500">Dara Veasna </div>
+                                <div class="ml-4 text-xs font-medium text-center text-gray-500 Posted">posted this . 2h ago</div>
+                              </div>
+                              <div class="flex flex-row mt-2 img-state">
+                                <img class="mr-3 object-cover20 object- Img rounded-2xl" src="../icons/company/aws.png"/>
+                                <div class="text-xs font-semibold text-blue-400 Title">#AWS</div>
+                              </div>
+                              
+                            </div>
+                            <div class="ml-10 contain">
+                              <div class="flex flex-row status">
+                                <div class="ml-2 text-xs font-medium text-center text-gray-800 DaraVeasn hover:text-blue-500">Dara Veasna </div>
+                                <div class="ml-4 text-xs font-medium text-center text-gray-500 Posted">posted this .  ago</div>
+                              </div>
+                              <div class="flex flex-row mt-2 img-state">
+                                <img class="mr-3 object-cover20 object- Img rounded-2xl" src="../icons/company/linkedin.png"/>
+                                <div class="text-xs font-semibold text-blue-400 Title">#LinkedIn</div>
+                              </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="tabs-2" class="hidden" role="tabpanel" aria-labelledby="tabs-item-2">
+                          <div class="flex flex-row companies">
+                            <img class="relative icon w-9" src="../icons/school/itc.svg" />
+                            <div class="flex flex-col justify-start ml-2 info">
+                              <div class="pl-2 text-sm font-medium leading-snug text-black CompanyName text-opacity-80">Institute of Technology Of Cambodia</div>
+                              <div class="pl-2 text-xs font-medium leading-snug text-gray-500 t MFollowers">9M Followers</div>
+                              <div class="btn">
+                                <button
+                              type="button"
+                              class="absolute bg-blue-500 hover:border-white text-white px-5 py-1 my-2 text-xs font-medium text-center  border border-[#5D6D79] rounded-full Follow"
+                              >
+                                Following
+                              </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="tabs-3" class="hidden" role="tabpanel" aria-labelledby="tabs-item-3">
+                          <div class="flex flex-row companies">
+                            <img class="relative icon w-9" src="../icons/company/microsoft.png" />
+                            <div class="flex flex-col justify-start ml-2 info">
+                              <div class="pl-2 text-sm font-medium leading-snug text-black CompanyName text-opacity-80">Microsoft</div>
+                              <div class="pl-2 text-xs font-medium leading-snug text-gray-500 t MFollowers">9M Followers</div>
+                              <div class="btn">
+                                <button
+                              type="button"
+                              class="absolute bg-blue-500 hover:border-white text-white px-5 py-1 my-2 text-xs font-medium text-center  border border-[#5D6D79] rounded-full Follow"
+                              >
+                                Following
+                              </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="flex flex-row items-center justify-center pt-2 cursor-pointer see-all">
+                        <div class="mr-2 text-sm font-medium leading-snug text-center text-gray-500 ShowAllPost">Show all post</div>
+                        <img src="../icons/arrow_forward-small.svg" alt="">
+                      </div>
+                    </div>
+                  </div> 
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="static">
+              <div class="suggest-user w-[248px] h-full mt-[13px] relative">
+                <div
+                  class="w-full h-[270px] py-3 bg-white shadow sugguestion rounded-2xl mb-[20px] top-[83px] sticky"
+                >
+                  <div
+                    class="px-3 textsm font-medium SuggestUsers text-[#112D4E]"
+                  >
+                    Suggest Users
+                  </div>
+                  <hr class="mt-1 border-[#112D4E]" />
+                  <div onclick="window.location.href='./profile-elon.html'"
+                  class="pf-user py-[16px] px-[12px] h-[95px] cursor-pointer">
+                    <div class="flex flex-row user">
+                      <img src="../icons/profile/elon.png" alt="" />
+                      <div class="flex flex-col ml-2 detail">
+                        <div
+                          class="w-48 h-4 text-xs font-medium text-black Name text-opacity-80"
+                        >
+                          Elon Mask - CEO of SpaceX
+                        </div>
+                        <div class="flex flex-row items-center icon-de">
+                          <img src="../icons/schoolSmall.svg" alt="#" />
+                          <div class="text-[10px] pl-1 font-normal text-gray-500">
+                            ITC | Computer Science
+                          </div>
+                        </div>
+                        <div class="follow">
+                          <div class="Follow">
+                            <button
+                              type="button"
+                              class="absolute hover:bg-blue-500 hover:border-white hover:text-white px-5 py-1 my-2 text-xs font-medium text-center text-[#5D6D79] border border-[#5D6D79] rounded-full Follow"
+                            >
+                              Follow
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="pf-user py-[16px] px-[12px] h-[95px]">
+                  <div class="flex flex-row user">
+                    <img src="../icons/profile/dr.png" alt="" />
+                    <div class="flex flex-col ml-2 detail">
+                      <div
+                        class="w-48 h-4 text-xs font-medium text-black Name text-opacity-80"
+                      >
+                        Doctor Strange - CEO of Strange
+                      </div>
+                      <div class="flex flex-row items-center icon-de">
+                        <img src="../icons/schoolSmall.svg" alt="#" />
+                        <div class="text-[10px] pl-1 font-normal text-gray-500">
+                          UHS | Magical Science
+                        </div>
+                      </div>
+                      <div class="follow">
+                        <div class="Follow">
+                          <button
+                            type="button"
+                            class="absolute hover:bg-blue-500 hover:border-white hover:text-white px-5 py-1 my-2 text-xs font-medium text-center text-[#5D6D79] border border-[#5D6D79] rounded-full Follow"
+                          >
+                            Follow
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <button
+              onclick="window.location.href='./connection-user.html'"
+              class="flex flex-row items-center view-all">
+                <div class="text-xs  cursor-pointer font-medium text-black Name text-opacity-80 mr-[6px] items-center my-3 pl-4">View all suggestions</div>
+                <img src="../icons/arrow-small-right.svg" alt="">
+              </button>
+              <div
+                  class="w-full h-[300px] py-3 mt-3 bg-white shadow sugguestion rounded-2xl mb-[20px]"
+                >
+                  <div
+                    class="px-3 textsm font-medium SuggestUsers text-[#112D4E]"
+                  >
+                    Suggest Companies
+                  </div>
+                  <hr class="mt-1 border-[#112D4E]" />
+                  <div class="pf-user py-[16px] px-[12px] h-[110px]">
+                    <div class="flex flex-row h-7 w-7 user">
+                      <img src="../icons/company/tesla.png" alt="" />
+                      <div class="flex flex-col ml-2 detail">
+                        <div
+                          class="w-48 h-4 text-sm font-medium text-black Name text-opacity-80"
+                        >
+                          TESLA
+                        </div>
+  
+                          <div class="text-xs font-normal text-gray-500">Motor Vehicle Manufacturing<br/><nav class="text-xs font-normal text-gray-400">9M followers</nav></div>
+  
+                        <div class="follow">
+                          <div class="Follow">
+                            <button
+                              type="button"
+                              class="absolute hover:bg-blue-500 hover:border-white hover:text-white px-5 py-1 my-2 text-xs font-medium text-center text-[#5D6D79] border border-[#5D6D79] rounded-full Follow"
+                            >
+                              Follow
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="pf-user py-[16px] px-[12px] h-[110px]">
+                  <div class="flex flex-row h-7 w-7 user">
+                    <img src="../icons/company/apple.png" alt="" />
+                    <div class="flex flex-col ml-2 detail">
+                      <div
+                        class="w-48 h-4 text-sm font-medium text-black Name text-opacity-80"
+                      >
+                        APPLE 
+                      </div>
+  
+                        <div class="text-xs font-normal text-gray-500">Computer and Electronic <br/><nav class="text-xs font-normal text-gray-400">8M followers</nav></div>
+  
+                      <div class="follow">
+                        <div class="Follow">
+                          <button
+                            type="button"
+                            class="absolute hover:bg-blue-500 hover:border-white hover:text-white px-5 py-1 my-2 text-xs font-medium text-center text-[#5D6D79] border border-[#5D6D79] rounded-full Follow"
+                          >
+                            Follow
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <button 
+              onclick="window.location.href='./connection-company.html'"
+              class="flex flex-row items-center view-all">
+                <div class="text-xs  cursor-pointer font-medium text-black Name text-opacity-80 mr-[6px] items-center my-3 pl-4">View all suggestions</div>
+                <img src="../icons/arrow-small-right.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@preline/preline@1.0.0/dist/hs-ui.bundle.min.js"></script>
+  <script src="./node_modules/preline/dist/preline.js"></script>
+</html>

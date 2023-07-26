@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="../icons/logoo.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="flex justify-center w-full h-full screen bg-[#F6F6F6] relative">
+      <div class="center w-[1280px] h-full relative">
+        <div class="justify-center w-full bg-[#F6F6F6] flex-col relative">
+          <nav class="sticky top-0">
+            <div
+              class="nav-bar w-[1280px] h-[70px] bg-white flex items-center border sticky"
+            >
+              <a href="../html/homePage.html"
+                ><div class="flex flex-row ml-[32px] logo cursor-pointer">
+                  <img class="mr-1" src="../icons/logoo.svg" alt="logo" />
+                  <img src="../icons/logoLetter.svg" alt="logo" /></div
+              ></a>
+              
+              
+              <button id="dropdownUsersButton" data-dropdown-toggle="dropdownUsers" data-dropdown-placement="bottom" class="text-gray-500 border ml-[45px] border-black SearchBtn w-[650px] h-9 bg-neutral-100 rounded-2xl border-opacity-10 flex text-xl font-normal leading-relaxed tracking-tight items-centerfocus:ring-4 focus:outline-none focus:ring-blue-300  text-sm px-4 text-center  dark:focus:ring-blue-800" type="button">Search 
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownUsers" class="z-50 hidden bg-white rounded-lg shadow w-[650px] dark:bg-[#F6F6F6]">
+              <ul class="h-48 py-2 overflow-y-auto text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUsersButton">
+                <li>
+                  <a href="./profile.html" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../img/profile.png" alt="Jese image">
+                    Dara Veasna
+                  </a>
+                </li>
+                <li>
+                  <a href="./profile-elon.html" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/profile/elon.png" alt="Jese image">
+                    Elon Mask
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="object-cover w-6 h-6 mr-2 rounded-full" src="../img/me.png" alt="Jese image">
+                    Niccolo'
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../img/itc-pf.png" alt="Jese image">
+                    Institute of Technology of Cambodia
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/company/aws.png" alt="Jese image">
+                    Michael Gough
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/company/github.png" alt="Jese image">
+                    Github
+                  </a>
+                </li>
+                      <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/company/stackoverflow.png" alt="Jese image">
+                    Stackoverflow
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/company/linkedin.png" alt="Jese image">
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+              <a href="./connection-user.html" class="flex items-center p-3 text-sm font-medium text-white border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-blue-400 dark:hover:bg-blue-500 hover:underline">
+                  <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                    <path d="M6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Zm11-3h-2V5a1 1 0 0 0-2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 0 0 2 0V9h2a1 1 0 1 0 0-2Z"/>
+                  </svg>
+                  Add new user
+              </a>
+              </div>
+              
+
+              
+              <div
+                class="btn ml-[75px] flex flex-row w-[208px] justify-between"
+              >
+                <div
+                  class="flex items-center justify-center w-10 h-10 bg-white border border-black rounded-full cursor-pointer Rectangle80 border-opacity-10"
+                >
+                  <div class="w-5 h-5 Frame">
+                    <img src="../icons/Frame.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center w-10 h-10 bg-white border border-black rounded-full cursor-pointer Rectangle80 border-opacity-10"
+                >
+                  <div class="relative w-5 h-5 Frame">
+                    <div
+                      class="Ellipse36 w-4 h-4 bg-blue-400 rounded-full absolute bottom-[15px] left-[19px]"
+                    >
+                      <div
+                        class="flex items-center justify-center text-[10px] font-semibold text-center text-white w-4 h-4 rounded-full"
+                      >
+                        1<br />
+                      </div>
+                    </div>
+                    <img src="../icons/chat.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center w-10 h-10 bg-white border border-black rounded-full cursor-pointer Rectangle80 border-opacity-10"
+                >
+                  <div class="relative w-5 h-5 Frame">
+                    <div
+                      class="Ellipse36 w-4 h-4 bg-blue-400 rounded-full absolute bottom-[15px] left-[19px]"
+                    >
+                      <div
+                        class="flex items-center justify-center text-[10px] font-semibold text-center text-white w-4 h-4 rounded-full"
+                      >
+                        5<br />
+                      </div>
+                    </div>
+                    <img src="../icons/notification.svg" alt="" />
+                  </div>
+                </div>
+                
+                <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-end" class="z-50 w-10 h-10 p-1 rounded-full cursor-pointer ring-2 ring-gray-300 hover:ring-blue-500" src="../img/profile.png" alt="User dropdown">
+
+                  <!-- Dropdown menu -->
+                  <div id="userDropdown" class="z-10 hidden bg-[#FFFFFF] divide-y divide-gray-100 rounded-lg shadow w-[250px] dark:divide-gray-600">
+                      <div class="flex flex-row items-center justify-center px-4 py-3 text-sm text-gray-900 dark:text-whiten">
+                        <img class="w-10 h-10 rounded-full Rectangle81 mr-[20px]" src="../img/profile.png" />
+                        <div class="text-2xl font-bold text-gray-700 DaraVeasna w-36">Dara Veasna</div>
+                      </div>
+                      <button onclick="window.location.href='./profile.html'" class="mx-[20px] relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-blue-400 to-purple-500 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-blue-200">
+                        <span class="relative py-1 text-blue-500 transition-all duration-75 ease-in bg-white rounded-full px-[65px] group-hover:bg-opacity-0 hover:text-white ">
+                            View Profile
+                        </span>
+                      </button>
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-50 dark:hover:text-white">
+                            <div class="flex items-center justify-between frame">
+                              <div class="flex flex-row items-center">
+                                <div class="relative mr-3 Icon w-9 h-9">
+                                  <div class="flex items-center justify-center rounded-full w-9 h-9 bg-stone-200">
+                                    <img src="../icons/btn/editpro.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="text-sm font-medium text-gray-500 References">Edit Profile</div>
+                              </div>
+                              <div class="for"><img src="../icons/btn/right.svg" alt=""></div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-50 dark:hover:text-white">
+                            <div class="flex items-center justify-between frame">
+                              <div class="flex flex-row items-center">
+                                <div class="relative mr-3 Icon w-9 h-9">
+                                  <div class="flex items-center justify-center rounded-full w-9 h-9 bg-stone-200">
+                                    <img src="../icons/btn/setting.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="text-sm font-medium text-gray-500 References">Setting & Privacy</div>
+                              </div>
+                              <div class="for"><img src="../icons/btn/right.svg" alt=""></div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-50 dark:hover:text-white">
+                            <div class="flex items-center justify-between frame">
+                              <div class="flex flex-row items-center">
+                                <div class="relative mr-3 Icon w-9 h-9">
+                                  <div class="flex items-center justify-center rounded-full w-9 h-9 bg-stone-200">
+                                    <img src="../icons/btn/help.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="text-sm font-medium text-gray-500 References">Help & Support</div>
+                              </div>
+                              <div class="for"><img src="../icons/btn/right.svg" alt=""></div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="py-1">
+                        <a href="./landingPage.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-50 dark:hover:text-white">
+                          <div class="flex items-center justify-between frame">
+                            <div class="flex flex-row items-center">
+                              <div class="relative mr-3 Icon w-9 h-9">
+                                <div class="flex items-center justify-center rounded-full w-9 h-9 bg-stone-200">
+                                  <img src="../icons/btn/logout.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="text-sm font-medium text-gray-500 References">Logout</div>
+                            </div>
+                            <div class="for"><img src="../icons/btn/right.svg" alt=""></div>
+                          </div>
+                        </a>
+                      </div>
+                  </div>
+
+
+                
+              </div>
+            </div>
+          </nav>
+          <div
+            class="container flex justify-evenly w-[1280px] h-full bg-[#F6F6F6]"
+          >
+            <div class="static home">
+              <div class="home-btn w-[250px] h-full flex flex-col relative ">
+                <div
+                  class="w-full h-[58px] bg-white shadow Bg rounded-2xl mt-[13px] flex items-center sticky top-[83px]"
+                >
+                  <div class="pf">
+                    <img
+                      class="ml-[12px] w-[30px] h-[30px]"
+                      src="../icons/profile/profile.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="ml-3 info">
+                    <div class="text-sm font-medium Username text-sky-950">
+                      Dara Veasna
+                    </div>
+                    <div class="flex flex-row items-center school">
+                      <div class="School w-2.5 h-2.5 flex items-center mr-1">
+                        <div class="BoundingBox">
+                          <img src="../icons/schoolSmall.svg" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-[10px] font-medium text-gray-500 text-opacity-80 font-serif"
+                      >
+                        Institute of Technology of Cambodia
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-full bg-white shadow Bg h-72 rounded-2xl mt-[13px] sticky top-[83px]"
+                >
+                  <div class="btn m-[18px]">
+                    <div
+                    onclick="window.location.href='./homePage.html'"
+                      class="flex flex-row items-center cursor-pointer home mb-[15px]"
+                    >
+                      <div
+                        class="bg-white border border-black border-opacity-10 rounded-full mr-[10px] Rectangle80 w-[30px] h-[30px] flex items-center justify-center"
+                      >
+                        <div class="w-4 h-4">
+                          <img src="../icons/btn/home.svg" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-base font-semibold text-black text-opacity-40 font-roboto Home"
+                      >
+                        Home
+                      </div>
+                    </div>
+                    <div
+                    onclick="window.location.href='./connection-user.html'"
+                      class="flex flex-row items-center cursor-pointer connection mb-[15px]"
+                    >
+                      <div
+                        class="flex items-center justify-center mr-[10px] bg-white border border-black rounded-full Rectangle80 w-[30px] h-[30px] border-opacity-10"
+                      >
+                        <div class="w-4 h-4">
+                          <img src="../icons/btn/group.svg" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-base font-semibold text-black text-opacity-40 font-roboto Connections"
+                      >
+                        Connections
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-row items-center cursor-pointer educhain mb-[15px]"
+                    >
+                      <div
+                        class="flex items-center justify-center mr-[10px] bg-white border border-black rounded-full Rectangle80 w-[30px] h-[30px] border-opacity-10"
+                      >
+                        <div class="w-4 h-4">
+                          <img src="../icons/btn/educhain.png" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-base font-semibold text-black text-opacity-40 font-roboto Connections"
+                      >
+                        EduChain
+                      </div>
+                    </div>
+                    <div
+                      onclick="window.location.href='./group.html'"
+                      class="flex flex-row items-center cursor-pointer groups mb-[15px]"
+                    >
+                      <div
+                        class="flex items-center justify-center mr-[10px] bg-white border border-black rounded-full Rectangle80 w-[30px] h-[30px] border-opacity-10"
+                      >
+                        <div class="w-4 h-4">
+                          <img src="../icons/btn/school.svg" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-base font-semibold text-black text-opacity-40 font-roboto Connections"
+                      >
+                        Groups
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-row items-center cursor-pointer events mb-[15px]"
+                    >
+                      <div
+                        class="flex items-center justify-center mr-[10px] bg-blue-400 border border-blue-500 rounded-full Rectangle80 w-[30px] h-[30px] border-opacity-10"
+                      >
+                        <div class="w-4 h-4">
+                          <img src="../icons/btn/event-white.svg" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-base font-bold text-blue-400 font-roboto Connections"
+                      >
+                        Events
+                      </div>
+                    </div>
+                    <div
+                      onclick="window.location.href='./savedPost.html'"
+                      class="flex flex-row items-center cursor-pointer saved-post mb-[15px]"
+                    >
+                      <div
+                        class="flex items-center justify-center mr-[10px] bg-white border border-black border-opacity-10 rounded-full Rectangle80 w-[30px] h-[30px] border-opacity-10"
+                      >
+                        <div class="icon">
+                          <img src="../icons/btn/bookmark.svg" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-base font-semibold text-black text-opacity-40 font-roboto Connections"
+                      >
+                        Saved Post
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post-container w-[654px] h-full">
+              <div class="create-post mt-[13px]">
+                <div
+                  class="flex items-center justify-center w-full bg-white shadow h-14 rounded-2xl"
+                >
+                  <div class="flex pf mr-[10px]">
+                    <img
+                      class="rounded-full Rectangle80 w-7 h-7"
+                      src="../icons/profile/profile.png"
+                    />
+                  </div>
+
+                  
+                                      <!-- Modal toggle -->
+                                      <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class=" text-gray-400 hover:text-gray-500 w-[555px] hover:bg-gray-200 focus:ring-4 border focus:outline-none focus:ring-blue-400 font-medium text-sm px-5 py-2.5  bg-neutral-100 rounded-2xl border-opacity-10" type="button">
+                                        Create a post
+                                    </button>
+                                    
+                                    <!-- Main modal -->
+                                    <div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                                        <div class="relative w-full max-w-2xl max-h-full">
+                                            <!-- Modal content -->
+                                            <div class="relative bg-white rounded-lg shadow dark:bg-[#FFFFFF]">
+                                                <!-- Modal header -->
+                                                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                                    <h3 class="text-xl font-semibold text-[#5D6D79] ml-[260px] dark:text-gray-600">
+                                                        Create a post
+                                                    </h3>
+                                                    <button type="button" class="inline-flex items-center justify-center w-8 h-8 ml-auto text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
+                                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                                        </svg>
+                                                        <span class="sr-only">Close modal</span>
+                                                    </button>
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="p-6 space-y-6">
+                                                    <div class="flex flex-row profile">
+                                                        <img class="w-12 h-12 rounded-full icon" src="../img/profile.png" />
+                                                        <div class="list-name ml-[20px]">
+                                                            <div class="text-xl font-normal text-black DaraVeasna w-28 text-opacity-80">Dara Veasna</div>
+                                                            <div class="flex items-center justify-center w-16 h-5 border border-black rounded pulbic bg-neutral-100 border-opacity-5">
+                                                                <img src="../icons/public.svg" alt="">
+                                                                <div class="text-[10px] font-normal text-gray-500 Public text-opacity-70 ml-1">Public</div>
+                                                            </div>
+                                                            <div class="text-2xl font-normal tracking-tight text-gray-500 mt-[20px]">What’s on your mind, Dara?</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal footer -->
+                                                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                                    <button data-modal-hide="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-[275px] py-2.5 text-center dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800">Post</button>
+                                                    <button data-modal-hide="defaultModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full border border-gray-200 text-sm font-medium px-2.5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-[#F5F5F5] dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-200 dark:focus:ring-gray-600"><img src="../icons/img.svg" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                  
+                  <div class="img ml-[10px]">
+                    <img src="../icons/post_img.svg" alt="" />
+                  </div>
+                </div>
+                <div class="poster pt-[10px]">
+                  <div class="w-full h-full bg-white rounded-2xl pb-[19px]">
+                    <div class="w-full post-container px-[27px] pt-[19px]">
+                      <div class="flex flex-row info">
+                        <div class="pf">
+                          <img class="w-[30px]" src="../icons/company/sala.png" alt="#" />
+                        </div>
+                        <div class="ml-[10px] namee">
+                          <div
+                            class="text-xs font-semibold text-black CambojobPhnomPenh text-opacity-80"
+                          >
+                            Sala Tech
+                          </div>
+                          <div class="flex flex-row items-center">
+                            <div
+                              class="text-xs font-normal text-gray-500 H text-opacity-70"
+                            >
+                              2h
+                            </div>
+                            <div
+                              class="relative flex-col items-start justify-start w-3 h-3 ml-1 top-[1px]"
+                            >
+                              <img src="../icons/public.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ml-auto saved">
+                          <img src="../icons/bookmarkYellow.svg" alt="#" />
+                        </div>
+                      </div>
+                      <div class="w-full Title">
+                        <span
+                          class="text-[12px] font-medium font-roboto text-black text-opacity-75"
+                          >Today we unveil the 2023 LinkedIn Top Companies list
+                          in the Philippines, a look at the 15 best workplaces
+                          to <br />
+                          grow a career. It's a resource for job seekers and
+                          career builders to identify companies that set workers
+                          up for success, explore open jobs, enhance their
+                          skills and more </span
+                        ><span
+                          class="text-[12px] font-semibold text-neutral-400"
+                          >... see more<br
+                        /></span>
+                      </div>
+                      <div class="w-full mt-3 img-post">
+                        <img
+                          class="object-cover w-full Img h-80"
+                          src="../img/salaEvent.jpg"
+                        />
+                      </div>
+                      <div class="flex flex-row mt-2 reaction">
+                        <div class="text-xs font-normal Likes text-neutral-500">
+                          168 likes
+                        </div>
+                        <div class="flex flex-row ml-auto cmt-share">
+                          <div
+                            class="mr-3 text-xs font-normal Comments text-neutral-500"
+                          >
+                            80 comments
+                          </div>
+                          <div
+                            class="text-xs font-normal Reposts text-neutral-500"
+                          >
+                            7 reposts
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="h-px mt-2 mb-2 border border-stone-300" />
+                      <div class="flex flex-row emoji w-[600px] justify-around">
+                        <div class="flex flex-row heart">
+                          <div class="mr-1 icon">
+                            <img src="../icons/reaction/heart.svg" alt="" />
+                          </div>
+                          <div
+                            class="text-base font-medium text-center text-gray-500 Like text-opacity-80"
+                          >
+                            Like
+                          </div>
+                        </div>
+                        <div class="flex flex-row item-center cmt">
+                          <div class="mr-1 icon">
+                            <img src="../icons/reaction/cmt.svg" alt="" />
+                          </div>
+                          <div
+                            class="text-base font-medium text-center text-gray-500 Like text-opacity-80"
+                          >
+                            Comment
+                          </div>
+                        </div>
+                        <div class="flex flex-row repost">
+                          <div class="mr-1 icon">
+                            <img src="../icons/reaction/repost.svg" alt="" />
+                          </div>
+                          <div
+                            class="text-base font-medium text-center text-gray-500 Like text-opacity-80"
+                          >
+                            Repost
+                          </div>
+                        </div>
+                        <div class="flex flex-row sent">
+                          <div class="mr-1 icon">
+                            <img src="../icons/reaction/sent.svg" alt="" />
+                          </div>
+                          <div
+                            class="text-base font-medium text-center text-gray-500 Like text-opacity-80"
+                          >
+                            Sent
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="poster pt-[10px]">
+                  <div class="w-full h-full bg-white rounded-2xl pb-[19px]">
+                    <div class="w-full post-container px-[27px] pt-[19px]">
+                      <div class="flex flex-row info">
+                        <div class="pf">
+                          <img src="../icons/company/itc.png" alt="#" />
+                        </div>
+                        <div class="ml-[10px] namee">
+                          <div
+                            class="text-xs font-semibold text-black CambojobPhnomPenh text-opacity-80"
+                          >
+                            Institute of Technology of Cambodia
+                          </div>
+                          <div class="flex flex-row items-center">
+                            <div
+                              class="text-xs font-normal text-gray-500 H text-opacity-70"
+                            >
+                              2h
+                            </div>
+                            <div
+                              class="relative flex-col items-start justify-start w-3 h-3 ml-1 top-[1px]"
+                            >
+                              <img src="../icons/public.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ml-auto saved">
+                          <img class="h-5 cursor-pointer" src="../icons/btn/bookmark.svg" alt="#" />
+                        </div>
+                      </div>
+                      <div class="w-full Title">
+                        <span
+                          class="text-[12px] font-medium font-roboto text-black text-opacity-75"
+                          >Today we unveil the 2023 LinkedIn Top Companies list
+                          in the Philippines, a look at the 15 best workplaces
+                          to <br />
+                          grow a career. It's a resource for job seekers and
+                          career builders to identify companies that set workers
+                          up for success, explore open jobs, enhance their
+                          skills and more </span
+                        ><span
+                          class="text-[12px] font-semibold text-neutral-400"
+                          >... see more<br
+                        /></span>
+                      </div>
+                      <div class="w-full mt-3 img-post">
+                        <img class="w-full Img h-80" src="../img/itc.png" />
+                      </div>
+                      <div class="flex flex-row mt-2 reaction">
+                        <div class="text-xs font-normal Likes text-neutral-500">
+                          168 likes
+                        </div>
+                        <div class="flex flex-row ml-auto cmt-share">
+                          <div
+                            class="mr-3 text-xs font-normal Comments text-neutral-500"
+                          >
+                            80 comments
+                          </div>
+                          <div
+                            class="text-xs font-normal Reposts text-neutral-500"
+                          >
+                            7 reposts
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="h-px mt-2 mb-2 border border-stone-300" />
+                      <div class="flex flex-row emoji w-[600px] justify-around">
+                        <div class="flex flex-row heart">
+                          <div class="mr-1 icon">
+                            <img src="../icons/reaction/heart-red.svg" alt="" />
+                          </div>
+                          <div
+                            class="text-base font-medium text-center text-gray-500 Like text-opacity-80"
+                          >
+                            Like
+                          </div>
+                        </div>
+                        <div class="flex flex-row item-center cmt">
+                          <div class="mr-1 icon">
+                            <img src="../icons/reaction/cmt.svg" alt="" />
+                          </div>
+                          <div
+                            class="text-base font-medium text-center text-gray-500 Like text-opacity-80"
+                          >
+                            Comment
+                          </div>
+                        </div>
+                        <div class="flex flex-row repost">
+                          <div class="mr-1 icon">
+                            <img src="../icons/reaction/repost.svg" alt="" />
+                          </div>
+                          <div
+                            class="text-base font-medium text-center text-gray-500 Like text-opacity-80"
+                          >
+                            Repost
+                          </div>
+                        </div>
+                        <div class="flex flex-row sent">
+                          <div class="mr-1 icon">
+                            <img src="../icons/reaction/sent.svg" alt="" />
+                          </div>
+                          <div
+                            class="text-base font-medium text-center text-gray-500 Like text-opacity-80"
+                          >
+                            Sent
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="poster pt-[10px]">
+                    <div class="w-full h-full bg-white rounded-2xl pb-[19px]">
+                      <div class="w-full post-container px-[27px] pt-[19px]">
+                        <div class="flex flex-row info">
+                          <div class="pf">
+                            <img src="../icons/company/camboJob.png" alt="#" />
+                          </div>
+                          <div class="ml-[10px] namee">
+                            <div
+                              class="text-xs font-semibold text-black CambojobPhnomPenh text-opacity-80"
+                            >
+                              CamboJob Siem Reap
+                            </div>
+                            <div class="flex flex-row items-center">
+                              <div
+                                class="text-xs font-normal text-gray-500 H text-opacity-70"
+                              >
+                                2h
+                              </div>
+                              <div
+                                class="relative flex-col items-start justify-start w-3 h-3 ml-1 top-[1px]"
+                              >
+                                <img src="../icons/public.svg" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ml-auto saved">
+                            <img class="h-5" src="../icons/btn/bookmark.svg" alt="#" />
+                          </div>
+                        </div>
+                        <div class="w-full Title">
+                          <span
+                            class="text-[12px] font-medium font-roboto text-black text-opacity-75"
+                            >Today we unveil the 2023 LinkedIn Top Companies list
+                            in the Philippines, a look at the 15 best workplaces
+                            to <br />
+                            grow a career. It's a resource for job seekers and
+                            career builders to identify companies that set workers
+                            up for success, explore open jobs, enhance their
+                            skills and more </span
+                          ><span
+                            class="text-[12px] font-semibold text-neutral-400"
+                            >... see more<br
+                          /></span>
+                        </div>
+                        <div class="w-full mt-3 img-post">
+                          <img
+                            class="object-cover w-full Img h-80"
+                            src="../img/event.jpg"
+                          />
+                        </div>
+                        <div class="flex flex-row mt-2 reaction">
+                          <div class="text-xs font-normal Likes text-neutral-500">
+                            168 likes
+                          </div>
+                          <div class="flex flex-row ml-auto cmt-share">
+                            <div
+                              class="mr-3 text-xs font-normal Comments text-neutral-500"
+                            >
+                              80 comments
+                            </div>
+                            <div
+                              class="text-xs font-normal Reposts text-neutral-500"
+                            >
+                              7 reposts
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="h-px mt-2 mb-2 border border-stone-300" />
+                        <div class="flex flex-row emoji w-[600px] justify-around">
+                          <div class="flex flex-row heart">
+                            <div class="mr-1 icon">
+                              <img src="../icons/reaction/heart.svg" alt="" />
+                            </div>
+                            <div
+                              class="text-base font-medium text-center text-gray-500 Like text-opacity-80"
+                            >
+                              Like
+                            </div>
+                          </div>
+                          <div class="flex flex-row item-center cmt">
+                            <div class="mr-1 icon">
+                              <img src="../icons/reaction/cmt.svg" alt="" />
+                            </div>
+                            <div
+                              class="text-base font-medium text-center text-gray-500 Like text-opacity-80"
+                            >
+                              Comment
+                            </div>
+                          </div>
+                          <div class="flex flex-row repost">
+                            <div class="mr-1 icon">
+                              <img src="../icons/reaction/repost.svg" alt="" />
+                            </div>
+                            <div
+                              class="text-base font-medium text-center text-gray-500 Like text-opacity-80"
+                            >
+                              Repost
+                            </div>
+                          </div>
+                          <div class="flex flex-row sent">
+                            <div class="mr-1 icon">
+                              <img src="../icons/reaction/sent.svg" alt="" />
+                            </div>
+                            <div
+                              class="text-base font-medium text-center text-gray-500 Like text-opacity-80"
+                            >
+                              Sent
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+            <div class="static z-0">
+              <div class="suggest-user w-[248px] h-full mt-[13px] ">
+                <div
+                  class="w-full h-[270px] py-3 bg-white shadow sugguestion rounded-2xl mb-[20px] top-[83px] sticky"
+                >
+                  <div
+                    class="px-3 textsm font-medium SuggestUsers text-[#112D4E]"
+                  >
+                    Suggest Users
+                  </div>
+                  <hr class="mt-1 border-[#112D4E]" />
+                  <div onclick="window.location.href='./profile-elon.html'"
+                  class="pf-user py-[16px] px-[12px] h-[95px] cursor-pointer">
+                    <div class="flex flex-row user">
+                      <img src="../icons/profile/elon.png" alt="" />
+                      <div class="flex flex-col ml-2 detail">
+                        <div
+                          class="w-48 h-4 text-xs font-medium text-black Name text-opacity-80"
+                        >
+                          Elon Mask - CEO of SpaceX
+                        </div>
+                        <div class="flex flex-row items-center icon-de">
+                          <img src="../icons/schoolSmall.svg" alt="#" />
+                          <div class="text-[10px] pl-1 font-normal text-gray-500">
+                            ITC | Computer Science
+                          </div>
+                        </div>
+                        <div class="follow">
+                          <div class="Follow">
+                            <button
+                              type="button"
+                              class="absolute hover:bg-blue-500 hover:border-white hover:text-white px-5 py-1 my-2 text-xs font-medium text-center text-[#5D6D79] border border-[#5D6D79] rounded-full Follow"
+                            >
+                              Follow
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="pf-user py-[16px] px-[12px] h-[95px]">
+                  <div class="flex flex-row user">
+                    <img src="../icons/profile/dr.png" alt="" />
+                    <div class="flex flex-col ml-2 detail">
+                      <div
+                        class="w-48 h-4 text-xs font-medium text-black Name text-opacity-80"
+                      >
+                        Doctor Strange - CEO of Strange
+                      </div>
+                      <div class="flex flex-row items-center icon-de">
+                        <img src="../icons/schoolSmall.svg" alt="#" />
+                        <div class="text-[10px] pl-1 font-normal text-gray-500">
+                          UHS | Magical Science
+                        </div>
+                      </div>
+                      <div class="follow">
+                        <div class="Follow">
+                          <button
+                            type="button"
+                            class="absolute hover:bg-blue-500 hover:border-white hover:text-white px-5 py-1 my-2 text-xs font-medium text-center text-[#5D6D79] border border-[#5D6D79] rounded-full Follow"
+                          >
+                            Follow
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <button
+              onclick="window.location.href='./connection-user.html'"
+              class="flex flex-row items-center view-all">
+                <div class="text-xs  cursor-pointer font-medium text-black Name text-opacity-80 mr-[6px] items-center my-3 pl-4">View all suggestions</div>
+                <img src="../icons/arrow-small-right.svg" alt="">
+              </button>
+              <div
+                  class="w-full h-[300px] py-3 mt-3 bg-white shadow sugguestion rounded-2xl mb-[20px]"
+                >
+                  <div
+                    class="px-3 textsm font-medium SuggestUsers text-[#112D4E]"
+                  >
+                    Suggest Companies
+                  </div>
+                  <hr class="mt-1 border-[#112D4E]" />
+                  <div class="pf-user py-[16px] px-[12px] h-[110px]">
+                    <div class="flex flex-row h-7 w-7 user">
+                      <img src="../icons/company/tesla.png" alt="" />
+                      <div class="flex flex-col ml-2 detail">
+                        <div
+                          class="w-48 h-4 text-sm font-medium text-black Name text-opacity-80"
+                        >
+                          TESLA
+                        </div>
+  
+                          <div class="text-xs font-normal text-gray-500">Motor Vehicle Manufacturing<br/><nav class="text-xs font-normal text-gray-400">9M followers</nav></div>
+  
+                        <div class="follow">
+                          <div class="Follow">
+                            <button
+                              type="button"
+                              class="absolute hover:bg-blue-500 hover:border-white hover:text-white px-5 py-1 my-2 text-xs font-medium text-center text-[#5D6D79] border border-[#5D6D79] rounded-full Follow"
+                            >
+                              Follow
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="pf-user py-[16px] px-[12px] h-[110px]">
+                  <div class="flex flex-row h-7 w-7 user">
+                    <img src="../icons/company/apple.png" alt="" />
+                    <div class="flex flex-col ml-2 detail">
+                      <div
+                        class="w-48 h-4 text-sm font-medium text-black Name text-opacity-80"
+                      >
+                        APPLE 
+                      </div>
+  
+                        <div class="text-xs font-normal text-gray-500">Computer and Electronic <br/><nav class="text-xs font-normal text-gray-400">8M followers</nav></div>
+  
+                      <div class="follow">
+                        <div class="Follow">
+                          <button
+                            type="button"
+                            class="absolute hover:bg-blue-500 hover:border-white hover:text-white px-5 py-1 my-2 text-xs font-medium text-center text-[#5D6D79] border border-[#5D6D79] rounded-full Follow"
+                          >
+                            Follow
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <button 
+              onclick="window.location.href='./connection-company.html'"
+              class="flex flex-row items-center view-all">
+                <div class="text-xs  cursor-pointer font-medium text-black Name text-opacity-80 mr-[6px] items-center my-3 pl-4">View all suggestions</div>
+                <img src="../icons/arrow-small-right.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+</html>

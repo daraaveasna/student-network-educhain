@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify</title>
+    <link rel="shortcut icon" href="../icons/logoo.svg" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex items-center justify-center w-full h-screen">
+      <div class="container flex justify-center">
+        <div class="bg-white VerifyCode w-[1280px] h-[832px] relative">
+          <div
+            class="absolute top-0 left-0 Background w-[1280px] h-[832px] bg-gradient-to-br from-blue-800 via-blue-400 to-blue-800"
+          >
+            <a href="./landingPage.html">
+              <img
+                class="Logo w-64 h-14 left-[35px] top-[37px] absolute cursor-pointer"
+                src="../icons/logoWhite.svg"
+              />
+            </a>
+            <div
+              class="VerifyEmailWireframe w-[500px] h-[600px] left-[390px] top-[116px] absolute bg-white rounded-3xl"
+            >
+              <div
+                class="Enter w-80 h-7 left-[121px] top-[193px] absolute"
+              ></div>
+              <div
+                class="Provide w-80 h-20 left-[123px] top-[243px] absolute"
+              ></div>
+              <div
+                class="Provide w-80 h-10 left-[95px] top-[369px] absolute bg-stone-50 rounded-2xl shadow"
+              >
+                <input
+                  type="password"
+                  id="input-email-label"
+                  class="block w-full px-4 py-3 text-sm font-semibold text-center border border-gray-300 rounded-xl bg-gray-50 bg focus:border-blue-500 focus:ring-blue-500"
+                  placeholder="Confirmation code"
+                />
+              </div>
+              <div
+                class="EnterConfirmationCode left-[143px] top-[202px] absolute text-center text-black text-xl font-medium"
+              >
+                Enter confirmation code<br />
+              </div>
+              <div
+                class="Verify left-[95px] top-[450px] absolute text-center w-[320px]"
+              >
+                <button
+                  onclick="window.location.href='../html/homePage.html'"
+                  type="button"
+                  class="inline-flex items-center justify-center w-full gap-2 px-4 py-2 text-sm font-semibold text-white transition-all bg-[#56AEFF] border border-transparent rounded-full round hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+                >
+                  Sign up
+                </button>
+              </div>
+              <div
+                class="EnterTheConfirmationCodeThatWeSentToDaraaVeasnaGmailCom w-80 h-9 left-[95px] top-[260px] absolute text-center text-sky-950 text-base font-medium"
+              >
+                Enter the confirmation code that we sent to<br /><span
+                  class="text-slate-400"
+                  >daraa.veasna@gmail.com</span
+                ><br /><br /><br />
+              </div>
+              <div class="IconEmail w-24 h-24 left-[200px] top-[74px] absolute">
+                <img src="../icons/icon_email.svg" alt="" />
+              </div>
+              <div
+                class="ResendCode left-[201px] top-[316px] absolute text-sky-500 text-base font-medium underline cursor-pointer"
+              >
+                Resend code
+              </div>
+              <div
+                class="BoundingBox w-6 h-6 left-[40px] top-[35px] absolute"
+              ></div>
+              <div class="ArrowBackIos w-6 h-6 left-[40px] top-[35px] absolute">
+                <div
+                  class="absolute top-0 left-0 w-6 h-6 cursor-pointer BoundingBox"
+                >
+                  <a href="../html/signUp.html">
+                    <img src="../icons/arrow_back_ios.svg" alt="#" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

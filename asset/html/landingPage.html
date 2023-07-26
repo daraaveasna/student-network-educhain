@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="../icons/logoo.svg" type="image/x-icon" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <div class="flex justify-center w-full">
+      <div class="container flex justify-center">
+        <div class="LandingPage w-[1280px] h-[2766px] relative bg-white">
+          <div
+            class="NavBar w[1000px] h-[44px] absolute left-[112px] top-[47px]"
+          >
+            <div class="Logo w-[238px] h-[44px] absolute left-[0px] top-[0px]">
+              <img
+                class="Logoletter1 w-[190px] h-[36px] absolute left-[48px] top-[4px]"
+                src="../icons/logoLetter.svg"
+              />
+              <img
+                class="Logoo1 w-[44px] h-[44px] absolute left-[0px] top-[0px]"
+                src="../icons/logoo.svg"
+              />
+            </div>
+            <div
+              class="Group16 w-[862px] h-[42px] absolute left-[138px] top-[0px]"
+            >
+              <button
+                type="button"
+                onclick="window.location.href='./login.html'"
+                class="text-[16px] left-[654px] top-[0px] absolute underline font-robotoinline-flex items-center justify-center gap-2 px-4 py-3 font-semibold text-blue-500 transition-all border border-transparent rounded-md hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+              >
+                Log In
+              </button>
+              <div
+                class="absolute top-0 inline-flex items-center justify-center ButtonSolid w-[111px] h-[42px] left-[751px]"
+              >
+                <div
+                  class="Group w-[111px] h-[42px] relative flex flex-col justify-start items-start"
+                >
+                  <button
+                    type="button"
+                    onclick="window.location.href='./signUp.html'"
+                    class="inline-flex items-center justify-center gap-2 px-4 py-3 text-sm font-semibold text-white transition-all bg-blue-500 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+                  >
+                    Sign up
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="Img w-[645px] h-[801px] absolute left-[632px] top-[166px]"
+          >
+            <div
+              class="Oval w-[600px] h-[581px] absolute left-[26px] top-[220px] bg-gradient-to-tr from-[#1949B4] to-[#56AEFF] rounded-[9999px]"
+            ></div>
+            <img
+              class="Cutegirl w-[557px] h-[670px] absolute left-[0px] top-[0px]"
+              src="../icons/cuteGirl.svg"
+            />
+          </div>
+          <div
+            class="LogInForm w-[360px] h-[403px] absolute left-[117px] top-[352px]"
+          >
+            <div
+              class="ForgotPassword left-[228px] top-[168px] absolute text-[16px] font-roboto font-semibold text-blue-500 transition-all hover:text-gray-700 cursor-pointer"
+            >
+              Forgot password?
+            </div>
+            <div
+              class="SignUp w-[360px] h-[34px] absolute left-[0px] top-[217px]"
+            >
+              <button
+                type="button"
+                onclick="window.location.href='./verifyCode.html'"
+                class="w-[360px] items-center justify-center gap-2 px-3 py-2 text-sm font-semibold text-white transition-all bg-blue-600 border border-transparent rounded-3xl roundinline-flex hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+              >
+                Sign In
+              </button>
+            </div>
+            <div
+              class="GoogleBtn w-[360px] h-[34px] absolute left-[0px] top-[314px]"
+            >
+              <div
+                class="SignInWithGoogle w-[360px] h-[34px] absolute left-[0px] top-[0px] cursor-pointer"
+                style="
+                  background: white;
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+                  border-radius: 16px;
+                  border: 0.5px #5d6d79 solid;
+                "
+              ></div>
+              <div
+                class="GroupGg"
+                style="
+                  width: 169.96px;
+                  height: 16px;
+                  left: 101px;
+                  top: 9px;
+                  position: absolute;
+                "
+              >
+                <div
+                  class="cursor-pointer ContinueWithGoogle font-roboto"
+                  style="
+                    width: 165.96px;
+                    height: 16px;
+                    left: 7px;
+                    top: -2px;
+                    position: absolute;
+                    text-align: center;
+                    color: #5d6d79;
+                    font-size: 14px;
+                    font-weight: 500;
+                    word-wrap: break-word;
+                  "
+                >
+                  Continue with Google<br />
+                </div>
+                <div
+                  class="IconGoogle"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    left: 0px;
+                    top: 0px;
+                    position: absolute;
+                    border-radius: 16px;
+                    overflow: hidden;
+                  "
+                >
+                  <img src="../icons/company/icon_google.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="NewToEdu"
+              style="
+                width: 360px;
+                height: 34px;
+                left: 0px;
+                top: 369px;
+                position: absolute;
+              "
+            >
+              <div
+                class="cursor-pointer SignInWithGoogle"
+                style="
+                  width: 360px;
+                  height: 34px;
+                  left: 0px;
+                  top: 0px;
+                  position: absolute;
+                  background: white;
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+                  border-radius: 16px;
+                  border: 0.5px #5d6d79 solid;
+                "
+              ></div>
+              <div
+                class="cursor-pointer NewToEduchainJoinNow font-roboto"
+                style="
+                  left: 91px;
+                  top: 7px;
+                  position: absolute;
+                  text-align: center;
+                  color: #5d6d79;
+                  font-size: 14px;
+                  font-weight: 500;
+                  word-wrap: break-word;
+                "
+              >
+                <a href="./signUp.html"
+                  >New to EduChain?
+                  <span class="text-sky-600">Join now</span></a
+                >
+              </div>
+            </div>
+            <div
+              class="LineOrLine"
+              style="
+                width: 357.35px;
+                height: 15px;
+                left: 0px;
+                top: 275px;
+                position: absolute;
+              "
+            >
+              <div
+                class="Line1"
+                style="
+                  width: 140px;
+                  height: 0px;
+                  left: 0px;
+                  top: 7px;
+                  position: absolute;
+                  border: 0.5px rgba(184, 181, 181, 0.5) solid;
+                "
+              ></div>
+              <div
+                class="Line2"
+                style="
+                  width: 140px;
+                  height: 0px;
+                  left: 217.35px;
+                  top: 6px;
+                  position: absolute;
+                  border: 0.5px rgba(184, 181, 181, 0.5) solid;
+                "
+              ></div>
+              <div
+                class="Or"
+                style="
+                  width: 17.42px;
+                  height: 15px;
+                  left: 170.5px;
+                  top: 0px;
+                  position: absolute;
+                  text-align: center;
+                  color: rgba(93, 109, 121, 0.5);
+                  font-size: 10px;
+                  font-family: Inter;
+                  font-weight: 500;
+                  word-wrap: break-word;
+                "
+              >
+                or
+              </div>
+            </div>
+            <div
+              class="Email w-[360px] h-[73.98px] left-[0px] top-[0px] absolute"
+            >
+              <div
+                class="EmailOrUsername left-[0px] top-[0px] absolute text-[#5d6d79] text-sm font-serif"
+              >
+                Email or Username
+              </div>
+              <div class="text-white">.</div>
+              <input
+                type="email"
+                id="input-label"
+                class="w-full px-4 py-3 text-sm border border-gray-400 rounded-lg"
+                placeholder="daraa.veasna@gmail.com"
+              />
+              <div
+                class="HeroiconsOutlineAtSymbol"
+                style="
+                  width: 15px;
+                  height: 15px;
+                  left: 332px;
+                  top: 45px;
+                  position: absolute;
+                "
+              >
+                <div
+                  class="Vector w-[14px] h-[14px] left-[1.88px] top-[-3px] absolute"
+                >
+                  <img src="../icons/email.svg" alt="#" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="Password w-[360px] h-[79px] left-[0px] top-[83px] absolute font-serif text-sm"
+            >
+              <div
+                class="Password"
+                style="
+                  width: 103.5px;
+                  height: 14px;
+                  left: 4.5px;
+                  top: -1px;
+                  position: absolute;
+                  color: #5d6d79;
+                  font-size: 14px;
+                  font-family: Roboto;
+                  font-weight: 500;
+                  line-height: 19.6px;
+                  word-wrap: break-word;
+                "
+              >
+                Password
+              </div>
+              <div class="text-transparent">.</div>
+              <img
+                class="PasswordIcon"
+                style="
+                  width: 15px;
+                  height: 15px;
+                  left: 332px;
+                  top: 36px;
+                  position: absolute;
+                "
+                src="../icons/password_icon.svg"
+              />
+              <input
+                type="password"
+                id="input-label"
+                class="w-full px-4 py-3 text-sm border border-gray-400 rounded-lg"
+                placeholder="******************"
+              />
+            </div>
+          </div>
+          <h1
+            class="WeHelpToBuildYou"
+            style="left: 117px; top: 145px; position: absolute"
+          >
+            <span
+              style="
+                color: #2f2f2f;
+                font-size: 56px;
+                font-family: Roboto;
+                font-weight: 900;
+                word-wrap: break-word;
+              "
+              >We Help to </span
+            ><span
+              class="font-extrabold text-transparent multiText text-8xl bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600"
+              style="
+                font-size: 70px;
+                font-family: Roboto;
+                font-weight: 900;
+                word-wrap: break-word;
+              "
+              ><br /></span
+            ><br /><span
+              style="
+                color: #2f2f2f;
+                font-size: 56px;
+                font-family: Roboto;
+                font-weight: 900;
+                word-wrap: break-word;
+              "
+              >Your Dream</span
+            >
+          </h1>
+          <div
+            class="WeAreAlwaysAvaile"
+            style="
+              left: 117px;
+              top: 305px;
+              position: absolute;
+              color: #7d7d7d;
+              font-size: 20px;
+              font-family: Roboto;
+              font-weight: 500;
+              line-height: 38px;
+              word-wrap: break-word;
+            "
+          >
+            Welcome to your professional community
+          </div>
+          <div
+            class="FeatureSchool"
+            style="
+              width: 1280px;
+              height: 303px;
+              left: 0px;
+              top: 832px;
+              position: absolute;
+            "
+          >
+            <div
+              class="NavSchool w-[1656px] h-[303px] left-[-170px] top-[0px] absolute bg-[#fafafa]"
+            ></div>
+            <div
+              class="DotNextPage"
+              style="
+                width: 107px;
+                height: 14px;
+                left: 579px;
+                top: 244px;
+                position: absolute;
+              "
+            >
+              <div
+                class="Oval"
+                style="
+                  width: 14px;
+                  height: 14px;
+                  left: 0px;
+                  top: 0px;
+                  position: absolute;
+                  background: #56aeff;
+                  border-radius: 9999px;
+                "
+              ></div>
+              <div
+                class="OvalCopy"
+                style="
+                  width: 10px;
+                  height: 10px;
+                  left: 35px;
+                  top: 2px;
+                  position: absolute;
+                  background: rgba(123.5, 123.5, 123.5, 0.32);
+                  border-radius: 9999px;
+                "
+              ></div>
+              <div
+                class="OvalCopy2"
+                style="
+                  width: 10px;
+                  height: 10px;
+                  left: 66px;
+                  top: 2px;
+                  position: absolute;
+                  background: rgba(123.5, 123.5, 123.5, 0.32);
+                  border-radius: 9999px;
+                "
+              ></div>
+              <div
+                class="OvalCopy3"
+                style="
+                  width: 10px;
+                  height: 10px;
+                  left: 97px;
+                  top: 2px;
+                  position: absolute;
+                  background: rgba(123.5, 123.5, 123.5, 0.32);
+                  border-radius: 9999px;
+                "
+              ></div>
+            </div>
+            <div
+              class="School"
+              style="
+                width: 1192px;
+                height: 70px;
+                left: 44px;
+                top: 119px;
+                position: absolute;
+              "
+            >
+              <marquee
+                behavior="scroll"
+                direction="right"
+                scrollamount=""
+                scrolldelay="50"
+              >
+                <div class="flex flex-row img">
+                  <img
+                    class="mr-20 Itc1"
+                    style="width: 70.82px; height: 70px; left: 0px; top: 0px"
+                    src="../icons/school/itc.svg"
+                  />
+                  <img
+                    class="mr-20 CadtSquareLogoBoundary1"
+                    style="width: 175px; height: 70px; left: 106px; top: 0px"
+                    src="../icons/school/cadt.svg"
+                  />
+                  <img
+                    class="mr-20 Aupp1"
+                    style="width: 258.9px; height: 70px; left: 316px; top: 0px"
+                    src="../icons/school/aupp.svg"
+                  />
+
+                  <img
+                    class="mr-20 Paragon"
+                    style="width: 246.4px; height: 70px; left: 610px; top: 0px"
+                    src="../icons/school/paragon.svg"
+                  />
+
+                  <img
+                    class="mr-20 Rupp"
+                    style="width: 195.07px; height: 70px; left: 891px; top: 0px"
+                    src="../icons/school/rupp.svg"
+                  />
+                  <img
+                    class="mr-20 Uhs"
+                    style="width: 70px; height: 70px; left: 1122px; top: 0px"
+                    src="../icons/school/uhs.svg"
+                  />
+                </div>
+              </marquee>
+            </div>
+            <div
+              class="FeaturedUniversitie"
+              style="
+                left: 479px;
+                top: 38px;
+                position: absolute;
+                opacity: 0.73;
+                text-align: center;
+                color: #373737;
+                font-size: 23px;
+                font-family: Roboto;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 2.1px;
+                word-wrap: break-word;
+              "
+            >
+              Featured Universities
+            </div>
+          </div>
+          <div
+            class="OurService"
+            style="
+              height: 159px;
+              left: 135px;
+              top: 1191px;
+              position: absolute;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 25px;
+              display: inline-flex;
+            "
+          >
+            <div
+              data-aos="fade-right"
+              class="OurServices"
+              style="
+                text-align: center;
+                color: #373737;
+                font-size: 37px;
+                font-family: Roboto;
+                font-weight: 700;
+                line-height: 54px;
+                word-wrap: break-word;
+              "
+            >
+              Our Services
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-center"
+              class="ExecutiveTradeInte"
+              style="
+                width: 949px;
+                height: 80px;
+                text-align: center;
+                color: #7d7d7d;
+                font-size: 22px;
+                font-family: Roboto;
+                font-weight: 500;
+                line-height: 38px;
+                word-wrap: break-word;
+              "
+            >
+              Executive Trade International is an University Application Centre,
+              guiding Cambodian students to Australian, British, Canadian and
+              Irish universities!
+            </div>
+          </div>
+          <div
+            class="FeaturesCareer"
+            style="
+              width: 300px;
+              height: 351px;
+              left: 121px;
+              top: 1466px;
+              position: absolute;
+            "
+          >
+            <div
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              class="cursor-pointer State"
+              style="
+                width: 300px;
+                height: 351px;
+                left: 0px;
+                top: 0px;
+                position: absolute;
+                background: white;
+                box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+                border-radius: 15px;
+              "
+            ></div>
+            <div
+              class="Group2"
+              style="
+                width: 296px;
+                height: 186px;
+                left: 31px;
+                top: 135px;
+                position: absolute;
+              "
+            >
+              <div
+                class="Group"
+                style="
+                  width: 133px;
+                  height: 25px;
+                  padding-top: 0.77px;
+                  padding-bottom: 0.23px;
+                  padding-right: -1px;
+                  left: 0px;
+                  top: 160.85px;
+                  position: absolute;
+                  justify-content: center;
+                  align-items: flex-start;
+                  gap: 16.3px;
+                  display: inline-flex;
+                "
+              >
+                <div
+                  class="ButtonText"
+                  style="
+                    color: #56aeff;
+                    font-size: 17px;
+                    font-weight: 700;
+                    font-family: Roboto;
+                    letter-spacing: 0.44px;
+                    word-wrap: break-word;
+                  "
+                >
+                  Learn More
+                </div>
+                <div
+                  class="IconNavigationArrowForward24px"
+                  style="
+                    width: 24px;
+                    height: 24px;
+                    position: relative;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    display: flex;
+                  "
+                >
+                  <img src="../icons/arrow_forward.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="Details font-roboto"
+                style="
+                  width: 296px;
+                  height: 90px;
+                  left: 0px;
+                  top: 46px;
+                  position: absolute;
+                  color: rgba(55, 71, 79, 0.72);
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 28px;
+                  letter-spacing: 0.44px;
+                  word-wrap: break-word;
+                "
+              >
+                Learn about your future career
+              </div>
+              <div
+                class="Title font-roboto"
+                style="
+                  width: 279px;
+                  left: 0px;
+                  top: 0px;
+                  position: absolute;
+                  color: #37474f;
+                  font-size: 24px;
+                  font-weight: 700;
+                  line-height: 37px;
+                  word-wrap: break-word;
+                "
+              >
+                Career Guide
+              </div>
+            </div>
+            <div
+              class="Group"
+              style="
+                width: 76px;
+                height: 76px;
+                left: 31px;
+                top: 29px;
+                position: absolute;
+              "
+            >
+              <div
+                class="Rectangle"
+                style="
+                  width: 76px;
+                  height: 76px;
+                  left: 0px;
+                  top: 0px;
+                  position: absolute;
+                  background: #717cff;
+                  border-radius: 38px;
+                "
+              ></div>
+              <div
+                class="IconMapsTrack24px"
+                style="
+                  width: 37px;
+                  height: 37px;
+                  left: 20px;
+                  top: 19px;
+                  position: absolute;
+                "
+              >
+                <div>
+                  <img src="../icons/track.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="FeaturesUni"
+            style="
+              width: 300px;
+              height: 351px;
+              left: 475px;
+              top: 1463px;
+              position: absolute;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+              display: flex;
+            "
+          >
+            <div
+              data-aos="flip-right"
+              class="cursor-pointer State"
+              style="
+                width: 300px;
+                height: 351px;
+                background: white;
+                box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+                border-radius: 15px;
+              "
+            >
+              <div
+                class="flex items-center justify-center Group"
+                style="
+                  width: 76px;
+                  height: 76px;
+                  left: 31px;
+                  top: 29px;
+                  position: absolute;
+                "
+              >
+                <div
+                  class="Rectangle"
+                  style="
+                    width: 76px;
+                    height: 76px;
+                    left: 0px;
+                    top: 0px;
+                    position: absolute;
+                    background: #ff5959;
+                    border-radius: 38px;
+                  "
+                ></div>
+                <div
+                  class="flex items-center justify-center IconMapsTrack24px"
+                  style="
+                    width: 37px;
+                    height: 37px;
+                    left: 20px;
+                    top: 19px;
+                    position: absolute;
+                  "
+                >
+                  <div>
+                    <img src="../icons/school.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="Group2"
+                style="
+                  width: 296px;
+                  height: 186px;
+                  left: 31px;
+                  top: 135px;
+                  position: absolute;
+                "
+              >
+                <div
+                  class="Group"
+                  style="
+                    width: 133px;
+                    height: 25px;
+                    padding-top: 0.77px;
+                    padding-bottom: 0.23px;
+                    padding-right: -1px;
+                    left: 0px;
+                    top: 160.85px;
+                    position: absolute;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 16.3px;
+                    display: inline-flex;
+                  "
+                >
+                  <div
+                    class="ButtonText"
+                    style="
+                      color: #56aeff;
+                      font-size: 17px;
+                      font-family: Roboto;
+                      font-weight: 700;
+                      letter-spacing: 0.44px;
+                      word-wrap: break-word;
+                    "
+                  >
+                    Learn More
+                  </div>
+                  <div
+                    class="IconNavigationArrowForward"
+                    style="
+                      width: 24px;
+                      height: 24px;
+                      position: relative;
+                      flex-direction: column;
+                      justify-content: flex-start;
+                      align-items: flex-start;
+                      display: flex;
+                    "
+                  >
+                    <img src="../icons/arrow_forward.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="Details font-roboto"
+                  style="
+                    width: 296px;
+                    height: 90px;
+                    left: 0px;
+                    top: 46px;
+                    position: absolute;
+                    color: rgba(55, 71, 79, 0.72);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    letter-spacing: 0.44px;
+                    word-wrap: break-word;
+                  "
+                >
+                  Discover and join resourceful <br />
+                  events of your favorite major <br />
+                  and university, major or courses.
+                </div>
+                <div
+                  class="Title font-roboto"
+                  style="
+                    width: 279px;
+                    left: 0px;
+                    top: 0px;
+                    position: absolute;
+                    color: #37474f;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 37px;
+                    word-wrap: break-word;
+                  "
+                >
+                  University
+                </div>
+              </div>
+            </div>
+            <div
+              class="Group2"
+              style="
+                padding-bottom: 0.15px;
+                padding-right: 17px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 123.85px;
+                display: inline-flex;
+              "
+            >
+              <div
+                class="Group"
+                style="
+                  align-self: stretch;
+                  flex: 1 1 0;
+                  padding-top: 0.77px;
+                  padding-bottom: 0.23px;
+                  padding-right: -1px;
+                  justify-content: center;
+                  align-items: flex-start;
+                  gap: 16.3px;
+                  display: inline-flex;
+                "
+              ></div>
+            </div>
+          </div>
+          <div
+            class="Events"
+            style="
+              width: 300px;
+              height: 351px;
+              left: 277px;
+              top: 1894px;
+              position: absolute;
+            "
+          >
+            <div
+              class="FeaturesCopy5"
+              style="
+                width: 300px;
+                height: 351px;
+                left: 0px;
+                top: 0px;
+                position: absolute;
+              "
+            >
+              <div
+                class="cursor-pointer State"
+                style="
+                  width: 300px;
+                  height: 351px;
+                  left: 0px;
+                  top: 0px;
+                  position: absolute;
+                  background: white;
+                  box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+                  border-radius: 15px;
+                "
+              ></div>
+              <div
+                class="Group2"
+                style="
+                  width: 296px;
+                  height: 186px;
+                  left: 31px;
+                  top: 135px;
+                  position: absolute;
+                "
+              >
+                <div
+                  class="Group"
+                  style="
+                    width: 133px;
+                    height: 25px;
+                    padding-top: 0.77px;
+                    padding-bottom: 0.23px;
+                    padding-right: -1px;
+                    left: 0px;
+                    top: 160.85px;
+                    position: absolute;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 16.3px;
+                    display: inline-flex;
+                  "
+                >
+                  <div
+                    class="ButtonText"
+                    style="
+                      color: #56aeff;
+                      font-size: 17px;
+                      font-family: Roboto;
+                      font-weight: 700;
+                      letter-spacing: 0.44px;
+                      word-wrap: break-word;
+                    "
+                  >
+                    Learn More
+                  </div>
+                  <div
+                    class="IconNavigationArrowForward24px"
+                    style="
+                      width: 24px;
+                      height: 24px;
+                      position: relative;
+                      flex-direction: column;
+                      justify-content: flex-start;
+                      align-items: flex-start;
+                      display: flex;
+                    "
+                  >
+                    <img src="../icons/arrow_forward.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="Details font-roboto"
+                  style="
+                    width: 296px;
+                    height: 90px;
+                    left: 0px;
+                    top: 46px;
+                    position: absolute;
+                    color: rgba(55, 71, 79, 0.72);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    letter-spacing: 0.44px;
+                    word-wrap: break-word;
+                  "
+                >
+                  Discover and join resourceful <br />events of your favorite
+                  major <br />
+                  and university, major or courses.
+                </div>
+                <div
+                  class="Title font-roboto"
+                  style="
+                    width: 279px;
+                    left: 0px;
+                    top: 0px;
+                    position: absolute;
+                    color: #37474f;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 37px;
+                    word-wrap: break-word;
+                  "
+                >
+                  Events
+                </div>
+              </div>
+              <div
+                class="Group"
+                style="
+                  width: 76px;
+                  height: 76px;
+                  left: 31px;
+                  top: 29px;
+                  position: absolute;
+                "
+              >
+                <div
+                  class="Rectangle"
+                  style="
+                    width: 76px;
+                    height: 76px;
+                    left: 0px;
+                    top: 0px;
+                    position: absolute;
+                    background: #5c96ff;
+                    border-radius: 38px;
+                  "
+                ></div>
+              </div>
+            </div>
+            <div
+              class="LocalActivity"
+              style="
+                width: 37px;
+                height: 37px;
+                left: 51px;
+                top: 49px;
+                position: absolute;
+              "
+            >
+              <div
+                class="flex items-center justify-center BoundingBox"
+                style="
+                  width: 37px;
+                  height: 37px;
+                  left: 0px;
+                  top: 0px;
+                  position: absolute;
+                "
+              ></div>
+              <div
+                class="LocalActivity"
+                style="
+                  width: 30.83px;
+                  height: 25.27px;
+                  left: 3px;
+                  top: 5px;
+                  position: absolute;
+                "
+              >
+                <img src="../icons/local_activity.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="Scholaship"
+            style="
+              width: 300px;
+              height: 351px;
+              left: 642px;
+              top: 1894px;
+              position: absolute;
+            "
+          >
+            <div
+              class="FeaturesCopy6"
+              style="
+                width: 300px;
+                height: 351px;
+                left: 0px;
+                top: 0px;
+                position: absolute;
+              "
+            >
+              <div
+                class="cursor-pointer State"
+                style="
+                  width: 300px;
+                  height: 351px;
+                  left: 0px;
+                  top: 0px;
+                  position: absolute;
+                  background: white;
+                  box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+                  border-radius: 15px;
+                "
+              ></div>
+              <div
+                class="Group2"
+                style="
+                  width: 296px;
+                  height: 186px;
+                  left: 31px;
+                  top: 135px;
+                  position: absolute;
+                "
+              >
+                <div
+                  class="Group"
+                  style="
+                    width: 133px;
+                    height: 25px;
+                    padding-top: 0.77px;
+                    padding-bottom: 0.23px;
+                    padding-right: -1px;
+                    left: 0px;
+                    top: 160.85px;
+                    position: absolute;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 16.3px;
+                    display: inline-flex;
+                  "
+                >
+                  <div
+                    class="ButtonText"
+                    style="
+                      color: #56aeff;
+                      font-size: 17px;
+                      font-weight: 700;
+                      font-family: Roboto;
+                      letter-spacing: 0.44px;
+                      word-wrap: break-word;
+                    "
+                  >
+                    Learn More
+                  </div>
+                  <div
+                    class="IconNavigationArrowForward24px"
+                    style="
+                      width: 24px;
+                      height: 24px;
+                      position: relative;
+                      flex-direction: column;
+                      justify-content: flex-start;
+                      align-items: flex-start;
+                      display: flex;
+                    "
+                  >
+                    <img src="../icons/arrow_forward.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="Details font-roboto"
+                  style="
+                    width: 296px;
+                    height: 90px;
+                    left: 0px;
+                    top: 46px;
+                    position: absolute;
+                    color: rgba(55, 71, 79, 0.72);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    letter-spacing: 0.44px;
+                    word-wrap: break-word;
+                  "
+                >
+                  Discover national and <br />international scholarships of
+                  <br />your favorite major/courses.
+                </div>
+                <div
+                  class="Title font-roboto"
+                  style="
+                    width: 279px;
+                    left: 0px;
+                    top: 0px;
+                    position: absolute;
+                    color: #37474f;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 37px;
+                    word-wrap: break-word;
+                  "
+                >
+                  Scholarship
+                </div>
+              </div>
+              <div
+                class="Rectangle"
+                style="
+                  width: 76px;
+                  height: 76px;
+                  left: 31px;
+                  top: 29px;
+                  position: absolute;
+                  background: #fa706c;
+                  border-radius: 38px;
+                "
+              ></div>
+            </div>
+            <div
+              class="AirplaneTicket"
+              style="
+                width: 37px;
+                height: 37px;
+                left: 51px;
+                top: 49px;
+                position: absolute;
+              "
+            >
+              <div
+                class="flex items-center justify-center BoundingBox"
+                style="
+                  width: 37px;
+                  height: 37px;
+                  left: 0px;
+                  top: 0px;
+                  position: absolute;
+                "
+              ></div>
+              <div
+                class="AirplaneTicket"
+                style="
+                  width: 30.83px;
+                  height: 25.27px;
+                  left: 3px;
+                  top: 5px;
+                  position: absolute;
+                "
+              >
+                <img src="../icons/airplane_ticket.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="MajorAndCourse"
+            style="
+              width: 300px;
+              height: 351px;
+              left: 830px;
+              top: 1466px;
+              position: absolute;
+            "
+          >
+            <div
+              class="FeaturesCopy7"
+              style="
+                width: 300px;
+                height: 351px;
+                left: 0px;
+                top: 0px;
+                position: absolute;
+              "
+            >
+              <div
+                class="cursor-pointer State"
+                style="
+                  width: 300px;
+                  height: 351px;
+                  left: 0px;
+                  top: 0px;
+                  position: absolute;
+                  background: white;
+                  box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+                  border-radius: 15px;
+                "
+              ></div>
+              <div
+                class="Group2"
+                style="
+                  width: 296px;
+                  height: 186px;
+                  left: 31px;
+                  top: 135px;
+                  position: absolute;
+                "
+              >
+                <div
+                  class="Group"
+                  style="
+                    width: 133px;
+                    height: 25px;
+                    padding-top: 0.77px;
+                    padding-bottom: 0.23px;
+                    padding-right: -1px;
+                    left: 0px;
+                    top: 160.85px;
+                    position: absolute;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 16.3px;
+                    display: inline-flex;
+                  "
+                >
+                  <div
+                    class="ButtonText"
+                    style="
+                      color: #56aeff;
+                      font-size: 17px;
+                      font-family: Roboto;
+                      font-weight: 700;
+                      letter-spacing: 0.44px;
+                      word-wrap: break-word;
+                    "
+                  >
+                    Learn More
+                  </div>
+                  <div
+                    class="IconNavigationArrowForward"
+                    style="
+                      width: 24px;
+                      height: 24px;
+                      position: relative;
+                      flex-direction: column;
+                      justify-content: flex-start;
+                      align-items: flex-start;
+                      display: flex;
+                    "
+                  >
+                    <img src="../icons/arrow_forward.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="Details font-roboto"
+                  style="
+                    width: 296px;
+                    height: 90px;
+                    left: 0px;
+                    top: 46px;
+                    position: absolute;
+                    color: rgba(55, 71, 79, 0.72);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    letter-spacing: 0.44px;
+                    word-wrap: break-word;
+                  "
+                >
+                  Discover college and University
+                </div>
+                <div
+                  class="Title font-roboto"
+                  style="
+                    width: 279px;
+                    left: 0px;
+                    top: 0px;
+                    position: absolute;
+                    color: #37474f;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 37px;
+                    word-wrap: break-word;
+                  "
+                >
+                  Major and Course
+                </div>
+              </div>
+              <div
+                class="Group"
+                style="
+                  width: 76px;
+                  height: 76px;
+                  left: 31px;
+                  top: 29px;
+                  position: absolute;
+                "
+              >
+                <div
+                  class="Rectangle"
+                  style="
+                    width: 76px;
+                    height: 76px;
+                    left: 0px;
+                    top: 0px;
+                    position: absolute;
+                    background: #70ce88;
+                    border-radius: 38px;
+                  "
+                ></div>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-center BoundingBox"
+              style="
+                width: 37px;
+                height: 37px;
+                left: 51px;
+                top: 48px;
+                position: absolute;
+              "
+            >
+              <div class="flex items-start justify-center Code">
+                <img src="../icons/code.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          
+          <div class="cliend">
+            
+          </div> 
+          
+          <div class="Footer w-[1280px] h-[346px] absolute left-0 top-[2420px]">
+            <div
+              class="Rectangle w-[1280px] h-[346px] absolute left-0 top-0 bg-[#56aeff] bg-gradient-to-r from-[#56aeff] to-[#1949b4]"
+              style="
+                width: 1656px;
+                height: 346px;
+                left: -170px;
+                top: 0px;
+                position: absolute;
+                background: linear-gradient(180deg, #56aeff 0%, #1949b4 100%);
+              "
+            ></div>
+            <div
+              class="QuickLinks"
+              style="
+                width: 161px;
+                height: 196px;
+                left: 700px;
+                top: 98px;
+                position: absolute;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                display: inline-flex;
+              "
+            >
+              <div
+                class="cursor-pointer AboutUsResponsibil"
+                style="
+                  width: 161px;
+                  color: #eeeeee;
+                  font-size: 18px;
+                  font-family: Roboto;
+                  font-weight: 500;
+                  line-height: 49px;
+                  word-wrap: break-word;
+                "
+              >
+                Social Network<br />Public School<br />Private School<br />Major
+                and Courses
+              </div>
+            </div>
+            <div
+              class="ConcordRoyalCourt"
+              style="
+                width: 343px;
+                left: 107px;
+                top: 142px;
+                position: absolute;
+                color: #eeeeee;
+                font-size: 18px;
+                font-family: Roboto;
+                font-weight: 500;
+                line-height: 32px;
+                word-wrap: break-word;
+              "
+            >
+              Institute of Technology of Cambodia, GIC<br />Russian Conf,
+              Norodom Blvd, Phnom Penh
+            </div>
+            <img
+              class="Logo w-[243px] h-[51px] left-[107px] top-[50px] absolute"
+              src="../icons/logo.svg"
+            />
+            <div
+              class="2020ExecutiveTra"
+              style="left: 107px; top: 264px; position: absolute"
+            >
+              <span
+                style="
+                  color: #eeeeee;
+                  font-size: 18px;
+                  font-family: Roboto;
+                  font-weight: 700;
+                  line-height: 32px;
+                  word-wrap: break-word;
+                "
+                >©</span
+              ><span
+                style="
+                  color: #eeeeee;
+                  font-size: 18px;
+                  font-family: Roboto;
+                  font-weight: 500;
+                  line-height: 32px;
+                  word-wrap: break-word;
+                "
+              >
+                2023 EduChain, inc.</span
+              >
+            </div>
+            <div
+              class="LegalStuff"
+              style="
+                width: 157px;
+                height: 197px;
+                padding-top: 0.2px;
+                padding-bottom: 0.8px;
+                left: 954px;
+                top: 98px;
+                position: absolute;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                display: inline-flex;
+              "
+            >
+              <div
+                class="cursor-pointer DisclaimerTestimoni"
+                style="
+                  width: 157px;
+                  color: #eeeeee;
+                  font-size: 18px;
+                  font-family: Roboto;
+                  font-weight: 500;
+                  line-height: 49px;
+                  word-wrap: break-word;
+                "
+              >
+                About Us<br />Contact Us<br />Join Us<br />Terms of Service
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typingEffect = new Typed(".multiText", {
+      strings: ["<i>Create</i>", "<i>Build</i>", "<i>Achieve</i>"],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1500,
+    });
+  </script>
+</html>

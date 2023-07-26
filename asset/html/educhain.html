@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduChain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="../icons/logoo.svg" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <div class="flex justify-center w-full h-full screen bg-[#F6F6F6] relative">
+      <div class="center w-[1280px] h-full relative">
+        <div class="justify-center w-full bg-[#F6F6F6] flex-col relative">
+          <nav class="sticky top-0">
+            <div
+              class="nav-bar w-[1280px] h-[70px] bg-white flex items-center border"
+            >
+              <a href="../html/homePage.html"
+                ><div class="flex flex-row ml-[32px] logo cursor-pointer">
+                  <img class="mr-1" src="../icons/logoo.svg" alt="logo" />
+                  <img src="../icons/logoLetter.svg" alt="logo" /></div
+              ></a>
+
+              
+              <button id="dropdownUsersButton" data-dropdown-toggle="dropdownUsers" data-dropdown-placement="bottom" class="text-gray-500 border ml-[45px] border-black SearchBtn w-[650px] h-9 bg-neutral-100 rounded-2xl border-opacity-10 flex text-xl font-normal leading-relaxed tracking-tight items-centerfocus:ring-4 focus:outline-none focus:ring-blue-300  text-sm px-4 text-center  dark:focus:ring-blue-800" type="button">Search 
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownUsers" class="z-50 hidden bg-white rounded-lg shadow w-[650px] dark:bg-[#F6F6F6]">
+              <ul class="h-48 py-2 overflow-y-auto text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUsersButton">
+                <li>
+                  <a href="./profile.html" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../img/profile.png" alt="Jese image">
+                    Dara Veasna
+                  </a>
+                </li>
+                <li>
+                  <a href="./profile-elon.html" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/profile/elon.png" alt="Jese image">
+                    Elon Mask
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="object-cover w-6 h-6 mr-2 rounded-full" src="../img/me.png" alt="Jese image">
+                    Niccolo'
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../img/itc-pf.png" alt="Jese image">
+                    Institute of Technology of Cambodia
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/company/aws.png" alt="Jese image">
+                    Michael Gough
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/company/github.png" alt="Jese image">
+                    Github
+                  </a>
+                </li>
+                      <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/company/stackoverflow.png" alt="Jese image">
+                    Stackoverflow
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-300 dark:hover:text-white text-opacity-80">
+                    <img class="w-6 h-6 mr-2 rounded-full" src="../icons/company/linkedin.png" alt="Jese image">
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+              <a href="./connection-user.html" class="flex items-center p-3 text-sm font-medium text-white border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-blue-400 dark:hover:bg-blue-500 hover:underline">
+                  <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                    <path d="M6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Zm11-3h-2V5a1 1 0 0 0-2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 0 0 2 0V9h2a1 1 0 1 0 0-2Z"/>
+                  </svg>
+                  Add new user
+              </a>
+              </div>
+              
+
+              
+              <div
+                class="btn ml-[75px] flex flex-row w-[208px] justify-between"
+              >
+                <div
+                  class="flex items-center justify-center w-10 h-10 bg-white border border-black rounded-full cursor-pointer Rectangle80 border-opacity-10"
+                >
+                  <div class="w-5 h-5 Frame">
+                    <img src="../icons/Frame.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center w-10 h-10 bg-white border border-black rounded-full cursor-pointer Rectangle80 border-opacity-10"
+                >
+                  <div class="relative w-5 h-5 Frame">
+                    <div
+                      class="Ellipse36 w-4 h-4 bg-blue-400 rounded-full absolute bottom-[15px] left-[19px]"
+                    >
+                      <div
+                        class="flex items-center justify-center text-[10px] font-semibold text-center text-white w-4 h-4 rounded-full"
+                      >
+                        1<br />
+                      </div>
+                    </div>
+                    <img src="../icons/chat.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center w-10 h-10 bg-white border border-black rounded-full cursor-pointer Rectangle80 border-opacity-10"
+                >
+                  <div class="relative w-5 h-5 Frame">
+                    <div
+                      class="Ellipse36 w-4 h-4 bg-blue-400 rounded-full absolute bottom-[15px] left-[19px]"
+                    >
+                      <div
+                        class="flex items-center justify-center text-[10px] font-semibold text-center text-white w-4 h-4 rounded-full"
+                      >
+                        5<br />
+                      </div>
+                    </div>
+                    <img src="../icons/notification.svg" alt="" />
+                  </div>
+                </div>
+                
+                <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-end" class="w-10 h-10 p-1 rounded-full cursor-pointer ring-2 ring-gray-300 hover:ring-blue-500" src="../img/profile.png" alt="User dropdown">
+
+                  <!-- Dropdown menu -->
+                  <div id="userDropdown" class="z-10 hidden bg-[#FFFFFF] divide-y divide-gray-100 rounded-lg shadow w-[250px] dark:divide-gray-600">
+                      <div class="flex flex-row items-center justify-center px-4 py-3 text-sm text-gray-900 dark:text-whiten">
+                        <img class="w-10 h-10 rounded-full Rectangle81 mr-[20px]" src="../img/profile.png" />
+                        <div class="text-2xl font-bold text-gray-700 DaraVeasna w-36">Dara Veasna</div>
+                      </div>
+                      <button onclick="window.location.href='./profile.html'" class="mx-[20px] relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-blue-400 to-purple-500 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-blue-200">
+                        <span class="relative py-1 text-blue-500 transition-all duration-75 ease-in bg-white rounded-full px-[65px] group-hover:bg-opacity-0 hover:text-white ">
+                            View Profile
+                        </span>
+                      </button>
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-50 dark:hover:text-white">
+                            <div class="flex items-center justify-between frame">
+                              <div class="flex flex-row items-center">
+                                <div class="relative mr-3 Icon w-9 h-9">
+                                  <div class="flex items-center justify-center rounded-full w-9 h-9 bg-stone-200">
+                                    <img src="../icons/btn/editpro.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="text-sm font-medium text-gray-500 References">Edit Profile</div>
+                              </div>
+                              <div class="for"><img src="../icons/btn/right.svg" alt=""></div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-50 dark:hover:text-white">
+                            <div class="flex items-center justify-between frame">
+                              <div class="flex flex-row items-center">
+                                <div class="relative mr-3 Icon w-9 h-9">
+                                  <div class="flex items-center justify-center rounded-full w-9 h-9 bg-stone-200">
+                                    <img src="../icons/btn/setting.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="text-sm font-medium text-gray-500 References">Setting & Privacy</div>
+                              </div>
+                              <div class="for"><img src="../icons/btn/right.svg" alt=""></div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-50 dark:hover:text-white">
+                            <div class="flex items-center justify-between frame">
+                              <div class="flex flex-row items-center">
+                                <div class="relative mr-3 Icon w-9 h-9">
+                                  <div class="flex items-center justify-center rounded-full w-9 h-9 bg-stone-200">
+                                    <img src="../icons/btn/help.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="text-sm font-medium text-gray-500 References">Help & Support</div>
+                              </div>
+                              <div class="for"><img src="../icons/btn/right.svg" alt=""></div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="py-1">
+                        <a href="./landingPage.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-50 dark:hover:text-white">
+                          <div class="flex items-center justify-between frame">
+                            <div class="flex flex-row items-center">
+                              <div class="relative mr-3 Icon w-9 h-9">
+                                <div class="flex items-center justify-center rounded-full w-9 h-9 bg-stone-200">
+                                  <img src="../icons/btn/logout.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="text-sm font-medium text-gray-500 References">Logout</div>
+                            </div>
+                            <div class="for"><img src="../icons/btn/right.svg" alt=""></div>
+                          </div>
+                        </a>
+                      </div>
+                  </div>
+
+
+
+              </div>
+            </div>
+          </nav>
+          <div
+            class="container flex justify-evenly w-[1280px] h-full bg-[#F6F6F6]"
+          >
+            <div class="static home">
+              <div class="home-btn w-[250px] h-full flex flex-col relative ">
+                <div
+                  class="w-full h-[58px] bg-white shadow Bg rounded-2xl mt-[13px] flex items-center sticky top-[83px]"
+                >
+                  <div class="pf">
+                    <img
+                      class="ml-[12px] w-[30px] h-[30px]"
+                      src="../icons/profile/profile.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="ml-3 info">
+                    <div class="text-sm font-medium Username text-sky-950">
+                      Dara Veasna
+                    </div>
+                    <div class="flex flex-row items-center school">
+                      <div class="School w-2.5 h-2.5 flex items-center mr-1">
+                        <div class="BoundingBox">
+                          <img src="../icons/schoolSmall.svg" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-[10px] font-medium text-gray-500 text-opacity-80 font-serif"
+                      >
+                        Institute of Technology of Cambodia
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-full bg-white shadow Bg h-72 rounded-2xl mt-[13px] sticky top-[83px]"
+                >
+                  <div class="btn m-[18px] hover:border-0">
+                    <div
+                      onclick="location.href='./homePage.html'"
+                      class="flex flex-row items-center cursor-pointer home mb-[15px] text-black text-opacity-40"
+                    >
+                      <div
+                        class=" border border-black border-opacity-10 rounded-full mr-[10px] Rectangle80 w-[30px] h-[30px] flex items-center justify-center"
+                      >
+                        <div class="w-4 h-4">
+                          <img src="../icons/btn/home.svg" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-base font-semibold text-black text-opacity-40 Home"
+                      >
+                        Home
+                      </div>
+                    </div>
+                    <div
+                      onclick="window.location.href='./connection-user.html'"
+                      class="flex flex-row items-center cursor-pointer connection mb-[15px]"
+                    >
+                      <div
+                        class="flex items-center justify-center mr-[10px] bg-whtie border border-black rounded-full Rectangle80 w-[30px] h-[30px] border-opacity-10"
+                      >
+                        <div class="w-4 h-4">
+                          <img src="../icons/btn/group.svg" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-base font-semibold text-black text-opacity-40 font-roboto Connections"
+                      >
+                        Connections
+                      </div>
+                    </div>
+                    <div
+                        onclick="window.location.href='./educhain.html'"
+                      class="flex flex-row items-center cursor-pointer educhain mb-[15px]"
+                    >
+                      <div
+                        class="flex items-center justify-center mr-[10px] bg-blue-400 border border-blue-500 rounded-full Rectangle80 w-[30px] h-[30px] border-opacity-10"
+                      >
+                        <div class="w-4 h-4">
+                          <img src="../icons/btn/educhainWhite.png" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-base font-bold text-blue-400 40 font-roboto Connections"
+                      >
+                        EduChain
+                      </div>
+                    </div>
+                    <div
+                      onclick="window.location.href='./group.html'"
+                      class="flex flex-row items-center cursor-pointer groups mb-[15px]"
+                    >
+                      <div
+                        class="flex items-center justify-center mr-[10px] bg-white border border-black rounded-full Rectangle80 w-[30px] h-[30px] border-opacity-10"
+                      >
+                        <div class="w-4 h-4">
+                          <img src="../icons/btn/school.svg" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-base font-semibold text-black text-opacity-40 font-roboto Connections"
+                      >
+                        Groups
+                      </div>
+                    </div>
+                    <div
+                      onclick="window.location.href='./events.html'"
+                      class="flex flex-row items-center cursor-pointer events mb-[15px]"
+                    >
+                      <div
+                        class="flex items-center justify-center mr-[10px] bg-white border border-black rounded-full Rectangle80 w-[30px] h-[30px] border-opacity-10"
+                      >
+                        <div class="w-4 h-4">
+                          <img src="../icons/btn/event.svg" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-base font-semibold text-black text-opacity-40 font-roboto Connections"
+                      >
+                        Events
+                      </div>
+                    </div>
+                    <div
+                      onclick="location.href='./savedPost.html'"
+                      class="flex flex-row items-center cursor-pointer saved-post mb-[15px]"
+                    >
+                      <div
+                        class="flex items-center justify-center mr-[10px] bg-white border border-black rounded-full Rectangle80 w-[30px] h-[30px] border-opacity-10"
+                      >
+                        <div class="w-4 h-4">
+                          <img src="../icons/btn/bookmark.svg" alt="" />
+                        </div>
+                      </div>
+                      <div
+                        class="text-base font-semibold text-black text-opacity-40 font-roboto Connections"
+                      >
+                        Saved Post
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="connection-container">
+                <div class="container static w-[931px] h-full z-10">
+                    <div class="static scrollable">
+                        <div class="h-[58px]  rounded-2xl mt-[13px] w-full flex items-center flex-col pt-4">
+                           <div class="flex items-center justify-between w-full px-5 course-feature">
+                            <h2 class="font-bold tracking-tight text-gray-700 text-[20px] FeatureCourses">Feature Courses</h2>
+                            <div class="w-12 h-6 text-sm font-semibold tracking-tight text-blue-400 cursor-pointer ViewAll hover:text-decoration-underline hover:text-gray-600">View all</div>
+                           </div>
+                        </div>
+                    </div>
+                        
+                        <div id="carouselExampleControls" class="pt-4 carousel carousel-dark slide" data-bs-ride="carousel -1.575Z">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <div class="card-wrapper container-sm d-flex justify-content-around">
+                              <div class="card w-[250px] h-full">
+                              <img src="../img/harvard.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="text-xl font-semibold tracking-tight text-gray-900">Harvard CS50</h5>
+                                <h5 class="text-base font-bold text-green-600">Full Course</h5>
+                                <div class="flex items-center mt-2.5 mb-4">
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                                </div>
+                              <div class="flex items-center justify-between">
+                                <span class="text-3xl font-bold text-gray-900">Free</span>
+                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                              </div>
+                          </div>
+                        </div>
+                        
+                        <div class="card w-[250px] h-full">
+                          <img src="../img/hack.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900">Ethical Hacking</h5>
+                            <h5 class="text-base font-bold text-green-600">Advance</h5>
+                            <div class="flex items-center mt-2.5 mb-4">
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                              <span class="text-3xl font-bold text-gray-900">$168</span>
+                              <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                            </div>
+                            
+                          </div>
+                                </div>
+                                <div class="card w-[250px] h-full">
+                                  <img src="../img/uxui.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900">UX/ UI</h5>
+                            <h5 class="text-base font-bold text-green-600">Figma Fundamental</h5>
+                            <div class="flex items-center mt-2.5 mb-4">
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                              <span class="text-3xl font-bold text-gray-900">Free</span>
+                              <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div class="card-wrapper container-sm d-flex justify-content-around">
+                                <div class="card w-[250px] h-full">
+                                  <img src="../img/cyber.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900">Cyber Security</h5>
+                            <h5 class="text-base font-bold text-green-600">Advance</h5>
+                            <div class="flex items-center mt-2.5 mb-4">
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                              <span class="text-3xl font-bold text-gray-900">$168</span>
+                              <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="card w-[250px] h-full">
+                          <img src="../img/solidity.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900">Web 3.0</h5>
+                            <h5 class="text-base font-bold text-green-600">Blockchain</h5>
+                            <div class="flex items-center mt-2.5 mb-4">
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                              <span class="text-3xl font-bold text-gray-900">$999</span>
+                              <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                            </div>
+                            
+                          </div>
+                                </div>
+                                <div class="card w-[250px] h-full">
+                          <img src="../img/metamask.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900">Metamask Tutorial</h5>
+                            <h5 class="text-base font-bold text-green-600">Beginner</h5>
+                            <div class="flex items-center mt-2.5 mb-4">
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                              <span class="text-3xl font-bold text-gray-900">Free</span>
+                              <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                            </div>
+                            
+                          </div>
+                        </div>
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div class="card-wrapper container-sm d-flex justify-content-around">
+                              <div class="card w-[250px] h-full">
+                          <img src="../img/eschool.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900">Eschool</h5>
+                            <h5 class="text-base font-bold text-green-600">BACII Examination</h5>
+                            <div class="flex items-center mt-2.5 mb-4">
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                              <span class="text-3xl font-bold text-gray-900">$168</span>
+                              <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="card w-[250px] h-full">
+                          <img src="../img/english.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900">English in 30 minutes</h5>
+                            <h5 class="text-base font-bold text-green-600">Class 101</h5>
+                            <div class="flex items-center mt-2.5 mb-4">
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                              <span class="text-3xl font-bold text-gray-900">$168</span>
+                              <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                            </div>
+                            
+                          </div>
+                                </div>
+                                <div class="card w-[250px] h-full">
+                          <img src="../img/google.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900">Google Certificate</h5>
+                            <h5 class="text-base font-bold text-green-600">Google Digital Marketing</h5>
+                            <div class="flex items-center mt-2.5 mb-4">
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                              </svg>
+                              <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                              <span class="text-3xl font-bold text-gray-900">Free</span>
+                              <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                            </div>
+                            
+                          </div>
+                        </div>
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+      
+                        
+                    </div>
+
+                                          <!-- Card Section -->
+                      <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+                        <!-- Grid -->
+                        <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-6">
+                          <!-- Card -->
+                          <a class="flex flex-col transition bg-white border shadow-sm group rounded-xl hover:shadow-md dark:bg-slate-900 dark:border-gray-800" href="#">
+                            <div class="p-4 md:p-5">
+                              <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                  <img class="h-[2.375rem] w-[2.375rem] rounded-full" src="../img/school-btn.png" alt="Image Description">
+                                  <div class="ml-3">
+                                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 dark:group-hover:text-blue-600 ">
+                                      School
+                                    </h3>
+                                  </div>
+                                </div>
+                                <div class="pl-3">
+                                  <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!-- End Card -->
+
+                          <!-- Card -->
+                          <a class="flex flex-col transition bg-white border shadow-sm group rounded-xl hover:shadow-md dark:bg-slate-900 dark:border-gray-800" href="./internship.html">
+                            <div class="p-4 md:p-5">
+                              <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                  <img class="h-[2.375rem] w-[2.375rem] rounded-full" src="../img/job-btn.png" alt="Image Description">
+                                  <div class="ml-3">
+                                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 dark:group-hover:text-blue-600 ">
+                                      Jobs
+                                    </h3>
+                                  </div>
+                                </div>
+                                <div class="pl-3">
+                                  <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!-- End Card -->
+
+                          <!-- Card -->
+                          <a class="flex flex-col transition bg-white border shadow-sm group rounded-xl hover:shadow-md dark:bg-slate-900 dark:border-gray-800" href="#">
+                            <div class="p-4 md:p-5">
+                              <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                  <img class="h-[2.375rem] w-[2.375rem] rounded-full" src="../img/course-btn.png" alt="Image Description">
+                                  <div class="ml-3">
+                                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 dark:group-hover:text-blue-600 ">
+                                      Courses
+                                    </h3>
+                                  </div>
+                                </div>
+                                <div class="pl-3">
+                                  <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!-- End Card -->
+
+                          <!-- Card -->
+                          <a class="flex flex-col transition bg-white border shadow-sm group rounded-xl hover:shadow-md dark:bg-slate-900 dark:border-gray-800" href="#">
+                            <div class="p-4 md:p-5">
+                              <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                  <img class="h-[2.375rem] w-[2.375rem] rounded-full" src="../img/shop-btn.png" alt="Image Description">
+                                  <div class="ml-3">
+                                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 dark:group-hover:text-blue-600 ">
+                                      Shop
+                                    </h3>
+                                  </div>
+                                </div>
+                                <div class="pl-3">
+                                  <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <!-- End Card -->
+
+                          
+                        </div>
+                        <!-- End Grid -->
+                      </div>
+                      <!-- End Card Section -->
+                    
+                            <article
+                              class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]"
+                            >
+                              <div class="rounded-[10px] bg-white p-4  sm:p-6">
+                                <time datetime="2022-10-10" class="block text-xs text-gray-500">
+                                  25th July 2023
+                                </time>
+
+                                <a href="#">
+                                  <h3 class="mt-0.5 text-lg font-medium text-gray-900">
+                                    EduChain: The key that unlocks the door to a brighter future.
+                                  </h3>
+                                </a>
+
+                                <div class="flex flex-wrap gap-1 mt-3">
+                                  <span
+                                    class="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-blue-600"
+                                  >
+                                    Learn
+                                  </span>
+
+                                  <span
+                                    class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
+                                  >
+                                    Opportunity
+                                  </span>
+                                </div>
+                              </div>
+                            </article>
+
+                            <div class="h-[58px]  rounded-2xl mt-[13px] w-full flex items-center flex-col pt-4">
+                              <div class="flex items-center justify-between w-full px-5 cursor-pointer course-feature">
+                                <h2 class="font-bold tracking-tight text-gray-700 text-[20px] FeatureCourses">Popular Now</h2>
+                                <div class="w-12 h-6 text-sm font-semibold tracking-tight text-blue-400 ViewAll hover:text-decoration-underline hover:text-gray-600">View all</div>
+                              </div>
+                            </div>
+                              
+
+                            <div id="carouselExampleControls" class="pt-4 carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <div class="card-wrapper container-sm d-flex justify-content-around">
+                                  <div class="card w-[250px] h-full">
+                                  <img src="../img/khmer1.jpg" class="card-img-top object-cover h-[139.89px]" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="text-xl font-semibold tracking-tight text-gray-900">Learn Khmer</h5>
+                                    <h5 class="text-base font-bold text-green-600">Fundamental</h5>
+                                    <div class="flex items-center mt-2.5 mb-4">
+                                      <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                      </svg>
+                                      <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                      </svg>
+                                      <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                      </svg>
+                                      <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                      </svg>
+                                      <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                      </svg>
+                                      <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                                    </div>
+                                  <div class="flex items-center justify-between">
+                                    <span class="text-3xl font-bold text-gray-900">$2</span>
+                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                                  </div>
+                              </div>
+                            </div>
+                            
+                            <div class="card w-[250px] h-full">
+                              <img src="../img/khmer2.jpeg" class="card-img-top object-cover h-[139.89px]" alt="...">
+                              <div class="card-body">
+                                <h5 class="text-xl font-semibold tracking-tight text-gray-900">Brother in ARMs</h5>
+                                <h5 class="text-base font-bold text-green-600">Khmer Rouge</h5>
+                                <div class="flex items-center mt-2.5 mb-4">
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                  <span class="text-3xl font-bold text-gray-900">$4</span>
+                                  <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                                </div>
+                                
+                              </div>
+                                    </div>
+                                    <div class="card w-[250px] h-full">
+                                      <img  src="../img/deepwork.jpg" class="card-img-top object-cover h-[139.89px]" alt="...">
+                              <div class="card-body">
+                                <h5 class="text-xl font-semibold tracking-tight text-gray-900">Deep Work</h5>
+                                <h5 class="text-base font-bold text-green-600">Self Develop</h5>
+                                <div class="flex items-center mt-2.5 mb-4">
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                  <span class="text-3xl font-bold text-gray-900">$1.99</span>
+                                  <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <div class="card-wrapper container-sm d-flex justify-content-around">
+                                    <div class="card w-[250px] h-full">
+                                      <img src="../img/khmer4.jpg" class="object-cover card-img-top h-[139.89px]" alt="...">
+                              <div class="card-body">
+                                <h5 class="text-xl font-semibold tracking-tight text-gray-900">The Lost Empire</h5>
+                                <h5 class="text-base font-bold text-green-600">History</h5>
+                                <div class="flex items-center mt-2.5 mb-4">
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                  <span class="text-3xl font-bold text-gray-900">$8</span>
+                                  <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            <div class="card w-[250px] h-full">
+                              <img src="../img/kolap.jpg" class="card-img-top object-cover h-[139.89px]" alt="...">
+                              <div class="card-body">
+                                <h5 class="text-xl font-semibold tracking-tight text-gray-900">កុលាបប៉៉ៃលិន</h5>
+                                <h5 class="text-base font-bold text-green-600">Khmer Novel</h5>
+                                <div class="flex items-center mt-2.5 mb-4">
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                  <span class="text-3xl font-bold text-gray-900">$6.89</span>
+                                  <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                                </div>
+                                
+                              </div>
+                                    </div>
+                                    <div class="card w-[250px] h-full">
+                              <img src="../img/richdad.png" class="card-img-top object-cover h-[139.89px]" alt="...">
+                              <div class="card-body">
+                                <h5 class="text-xl font-semibold tracking-tight text-gray-900">Rich Dad Poor Dad</h5>
+                                <h5 class="text-base font-bold text-green-600">Primary School</h5>
+                                <div class="flex items-center mt-2.5 mb-4">
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 mr-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                  </svg>
+                                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                  <span class="text-3xl font-bold text-gray-900">$2.28</span>
+                                  <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy now</a>
+                                </div>
+                                
+                              </div>
+                            </div>
+                                </div>
+                                </div>
+                            
+                        </div>
+   
+                                            </div>
+                                        </div>
+                                </div>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://github.com/markmead/hyperui/blob/main/tailwind.preset.js"></script>
+</html>
